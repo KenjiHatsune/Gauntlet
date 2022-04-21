@@ -27,7 +27,7 @@ public class Character : MonoBehaviour
     [SerializeField] protected int Armor = 0;
     protected int Score = 0;
     [Tooltip("How long it takes to finish a 'move.'")]
-    [SerializeField] protected float MoveTime = 2f;
+    [SerializeField] protected float MoveTime = 0.25f;
     protected float _sensitivity = 0.4f;
     protected bool visible = true;
 
@@ -38,17 +38,21 @@ public class Character : MonoBehaviour
     [Header("Attacks")]
     [Tooltip("Projectile of player's attack.")]
     [SerializeField] protected GameObject AttackPrefab;
+    [Tooltip("Element of Player's attack.")]
+    [SerializeField] protected Element AttackElement;
     [Tooltip("Damage dealt by each attack.")]
     [SerializeField] protected int AttackDamage = 1;
     [Tooltip("Speed that the projectile moves.")]
-    [SerializeField] protected float ProjectileSpeed = 2.5f;
+    [SerializeField] protected float ProjectileSpeed = 10f;
     [Tooltip("Time between each attack.")]
     [SerializeField] protected float AttackDelay = 1f;
+    [Tooltip("How long the projectile lives for.")]
+    [SerializeField] protected float ProjectileLifeSpan = 5f;
     protected bool AttackReady = true;
 
     [Header("Skills")]
     [Tooltip("Cooldown for class skill.")]
-    [SerializeField] protected float SkillDelay = 30f;
+    [SerializeField] protected float SkillDelay = 5f;
     protected bool SkillReady = true;
 
     [Header("Utility Functions")]
@@ -60,8 +64,15 @@ public class Character : MonoBehaviour
     protected float _moveTimePassed;
     protected float _attackTimePassed;
     protected float _skillTimePassed;
+    [SerializeField] protected LayerMask _wallLayer;
 
-    protected void Start()
+    [Header("Warrior Settings")]
+    [Tooltip("Controls whether or not the attack's damage drops off over time.")]
+    [SerializeField] protected bool DamageDropOff = false;
+    [Tooltip("Controls the amount the attack's damage drops once a quarter of it's lifetime passes.")]
+    [SerializeField] protected int DamageDropOffAmount = 0;
+
+    protected void Awake()
     {
         //Setting up player controls.
         _UIS = new PlayerControls();
@@ -87,7 +98,9 @@ public class Character : MonoBehaviour
 
     public void TakeDamage(int damageTaken)
     {
-        Health -= damageTaken;
+        damageTaken -= Armor;
+        if (damageTaken > 0)
+            Health -= damageTaken;
     }
 
     public void Attack(InputAction.CallbackContext context)
@@ -97,6 +110,10 @@ public class Character : MonoBehaviour
 
         GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
         projectile.GetComponent<Rigidbody>().velocity = (transform.forward * ProjectileSpeed);
+
+        projectile.GetComponent<PlayerProjectile>().DamageDropOff = DamageDropOff;
+        projectile.GetComponent<PlayerProjectile>().DamageDropOffAmount = DamageDropOffAmount;
+        projectile.GetComponent<PlayerProjectile>().LifeSpan = ProjectileLifeSpan;
         
         AttackReady = false;
         StartCoroutine("AttackCooldown");
@@ -125,10 +142,6 @@ public class Character : MonoBehaviour
     //This translates the player's inputs into motion.
     public void Move()
     {
-        //If the player is currently moving, reject input.
-        if (_moving)
-            return;
-
         Vector2 temp = _UIS.Player.Move.ReadValue<Vector2>();
 
         //Returning if no input.
@@ -160,6 +173,15 @@ public class Character : MonoBehaviour
             currentDirection = Direction.right;
         else if (temp.x <= -_sensitivity)
             currentDirection = Direction.left;
+    }
+
+    protected void OnCollisionEnter(Collision collision)
+    {
+        //Opening Door on Collision.
+        if (collision.gameObject.CompareTag("Door") && UseKey())
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     //This checks to make sure the player is not trying to walk through a wall.
@@ -210,7 +232,7 @@ public class Character : MonoBehaviour
         }
 
         //If something is hit, the player cannot move this direction.
-        if (Physics.Raycast(LookingDirection, out hit, 1f))
+        if (Physics.Raycast(LookingDirection, out hit, 1f, _wallLayer))
         {
             if (!hit.collider.CompareTag("Attack"))
                 return false;
@@ -277,20 +299,19 @@ public class Character : MonoBehaviour
                         break;
                 }
 
-                while (transform.position != endPos)
+                transform.LookAt(endPos);
+
+                while (_moveTimePassed < MoveTime)
                 {
-                    _moving = true;
+                    yield return new WaitForFixedUpdate();
 
                     _moveTimePassed += Time.fixedDeltaTime;
                     transform.position = Vector3.Lerp(startPos, endPos, _moveTimePassed / MoveTime);
-
-                    yield return new WaitForFixedUpdate();
                 }
-
-                _moving = false;
             }
 
-            yield return new WaitForFixedUpdate();
+            else
+                yield return new WaitForFixedUpdate();
         }
     }
 
@@ -321,11 +342,14 @@ public class Character : MonoBehaviour
     //This keeps track of the player's skill cooldown. When complete, it will allow the player to use the skill again.
     protected IEnumerator SkillCooldown()
     {
+        //Disabling ability to use skill.
+        SkillReady = false;
         //Setting skill cooldown timer.
         _skillTimePassed = SkillDelay;
 
         while (_skillTimePassed > 0)
         {
+            Debug.Log("Time Remaining: " + _skillTimePassed);
             _skillTimePassed--;
             yield return new WaitForSeconds(1f);
         }
