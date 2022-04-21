@@ -15,4 +15,14 @@ public class Sorcerer : BaseEnemy
     {
         Move(); 
     }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Sorcerer")
+            {
+                this.gameObject.SetActive(false);
+            }
+        }
+    }
 }

@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6561771619728286603}
   m_Layer: 0
   m_Name: AdventurerOfLight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,9 +244,21 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 00814242-dd19-4f4d-923b-c65dba41ab00
     m_ActionName: PlayerOne/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3a990801-9664-4797-a72d-9f8a951bfc80
+    m_ActionName: Player/UsePotion[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8025edc2-c3fa-4497-8733-8767e1316d23
+    m_ActionName: Player/UseAbility[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 56cc75d7-77f0-4668-aa2e-2f2c8e5e26c6
+    m_ActionName: Player/Attack[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: PlayerOne
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &6561771619728286645
@@ -263,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Armor: 0
   MoveTime: 0.25
+  AttackPrefab: {fileID: 0}
   AttackDamage: 1
   ProjectileSpeed: 2.5
   AttackDelay: 1

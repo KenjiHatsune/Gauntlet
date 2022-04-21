@@ -15,4 +15,14 @@ public class Lobber : BaseEnemy
     {
         Move();
     }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Lobber")
+            {
+                this.gameObject.SetActive(false);
+            }
+        }
+    }
 }

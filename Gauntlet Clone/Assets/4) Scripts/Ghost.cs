@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ghost : BaseEnemy
 {
-    //private Character character;
+    private Character character;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,17 @@ public class Ghost : BaseEnemy
         if(other.gameObject.tag == "Player")
         {
             gameObject.SetActive(false);
-           // character.TakeDamage(20);
+           character.TakeDamage(20);
+        }
+    }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Ghost")
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

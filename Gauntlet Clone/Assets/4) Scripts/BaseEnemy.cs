@@ -10,11 +10,18 @@ public class BaseEnemy : MonoBehaviour
     public float range = 10f;
     public float limitRange = 5f;
     public float damage;
-    public Transform player;
+   public GameObject player;
+    //public Rigidbody rgbd;
    
     // Start is called before the first frame update
     void Start()
     {
+        //rgbd = GetComponent<Rigidbody>();
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+       
         
     }
 
@@ -22,12 +29,14 @@ public class BaseEnemy : MonoBehaviour
     void Update()
     {
         Move();
+       // player = GameObject.FindWithTag("Player").transform;
     }
     
     public void Move()
     {
-        transform.LookAt(player);
-       
+        transform.LookAt(player.transform.position);
+
         transform.position += transform.forward * speed * Time.deltaTime;
+        
     }
 }
