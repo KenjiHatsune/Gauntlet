@@ -85,12 +85,18 @@ public class Character : MonoBehaviour
         Move();
     }
 
-    protected void Attack(InputAction.CallbackContext context)
+    public void TakeDamage(int damageTaken)
+    {
+        Health -= damageTaken;
+    }
+
+    public void Attack(InputAction.CallbackContext context)
     {
         //Returning if action is not performed or attack is not ready.
         if (!context.performed || !AttackReady) return;
 
-        GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation); 
+        GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
+        projectile.GetComponent<Rigidbody>().velocity = (transform.forward * ProjectileSpeed);
         
         AttackReady = false;
         StartCoroutine("AttackCooldown");
@@ -205,7 +211,13 @@ public class Character : MonoBehaviour
 
         //If something is hit, the player cannot move this direction.
         if (Physics.Raycast(LookingDirection, out hit, 1f))
-            return false;
+        {
+            if (!hit.collider.CompareTag("Attack"))
+                return false;
+
+            else
+                return true;
+        }
 
         else
             return true;
