@@ -7,7 +7,7 @@ public class GruntGen : MonoBehaviour
     public float delay = 1f;
     public float StartTime = 3f;
     public GameObject Grunt;
-    public GameObject spawn;
+    //public GameObject spawn;
     // Start is called before the first frame update
     void Start()
     {

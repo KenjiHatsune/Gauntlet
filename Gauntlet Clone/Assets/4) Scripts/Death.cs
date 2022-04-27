@@ -9,6 +9,7 @@ public class Death : BaseEnemy
     {
         //health = 200;
         speed = 4;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

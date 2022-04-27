@@ -5,13 +5,14 @@ using UnityEngine;
 public class Grunt : BaseEnemy
 {
     private Character character;
-  
+    
+
     // Start is called before the first frame update
     void Start()
     {
         //health = 2;
         speed = 2;
-     
+        player = player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

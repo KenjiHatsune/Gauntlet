@@ -17,10 +17,10 @@ public class BaseEnemy : MonoBehaviour
     void Start()
     {
         //rgbd = GetComponent<Rigidbody>();
-        if(player == null)
-        {
+        
+        
             player = GameObject.FindGameObjectWithTag("Player");
-        }
+        
        
         
     }
