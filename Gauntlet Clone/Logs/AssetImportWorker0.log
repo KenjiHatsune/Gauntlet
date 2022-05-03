@@ -15,11 +15,11 @@ C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59103
+62445
 Successfully changed project path to: C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 77.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -36,102 +36,102 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001919 seconds.
+Registered in 0.002046 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.531 seconds
+- Completed reload, in  2.331 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2531ms)
-		BeginReloadAssembly (47ms)
+	ReloadAssembly (2331ms)
+		BeginReloadAssembly (49ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (522ms)
-			LoadAssemblies (45ms)
+		EndReloadAssembly (376ms)
+			LoadAssemblies (46ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (130ms)
+			SetupTypeCache (129ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (304ms)
+			SetupLoadedEditorAssemblies (159ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (48ms)
+				RefreshPlugins (47ms)
 				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (213ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004561 seconds.
+Registered in 0.098884 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000010E206AA210 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000024087B72840 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E243B23D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002408D104AC0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E25C1F910 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002408D978E10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20838940 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002408C874020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20AA2020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002408DB8A910 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E25093020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file data-00000240881E0440 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.395 seconds
+- Completed reload, in  1.377 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1396ms)
-		BeginReloadAssembly (130ms)
+	ReloadAssembly (1378ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (1210ms)
-			LoadAssemblies (80ms)
+		EndReloadAssembly (1191ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (595ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (626ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (48ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (450ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (470ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3026 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 133.7 MB.
 System memory in use after: 133.9 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3460.
-Total: 3.426600 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.127800 ms MarkObjects: 2.947400 ms  DeleteObjects: 0.101500 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3461.
+Total: 3.566600 ms (FindLiveObjects: 0.290000 ms CreateObjectMapping: 0.162900 ms MarkObjects: 3.047400 ms  DeleteObjects: 0.065400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -145,69 +145,69 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/4) Scripts/Lobber.cs
-  artifactKey: Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/Lobber.cs using Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9216edd82c1f7ddcfa5789cdff63fb') in 0.140972 seconds 
-  Import took 0.147443 seconds .
+  path: Assets/4) Scripts/DemonGen.cs
+  artifactKey: Guid(78f1b256429ec1b4eb8399302e7741ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/DemonGen.cs using Guid(78f1b256429ec1b4eb8399302e7741ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4728cecbb5804ecff4bb91179a3c69f') in 0.055555 seconds 
+  Import took 0.059987 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004236 seconds.
+Registered in 0.004177 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000010E205BA040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000024091617F40 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E263E69D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002408D2863E0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E24455020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000024091A52010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29B2B010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000024091595020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000024090C1C030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29139010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file data-0000024088226D00 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.152 seconds
+- Completed reload, in  1.269 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1153ms)
+	ReloadAssembly (1269ms)
 		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (983ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1100ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
+			SetupTypeCache (269ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (496ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (616ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (403ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (519ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 126.7 MB.
-System memory in use after: 127.0 MB.
+System memory in use after: 126.9 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3463.
-Total: 4.979900 ms (FindLiveObjects: 0.261900 ms CreateObjectMapping: 0.127700 ms MarkObjects: 4.554800 ms  DeleteObjects: 0.034400 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3464.
+Total: 3.436900 ms (FindLiveObjects: 0.283000 ms CreateObjectMapping: 0.132800 ms MarkObjects: 3.001600 ms  DeleteObjects: 0.018200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -220,41 +220,166 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 197.410827 seconds.
+  path: Assets/4) Scripts/GruntGen.cs
+  artifactKey: Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/GruntGen.cs using Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77d7ba871b13f91af2d61f99a4f3c0b') in 0.008217 seconds 
+  Import took 0.012105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.530949 seconds.
+  path: Assets/4) Scripts/GruntGen.cs
+  artifactKey: Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/GruntGen.cs using Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b4893235c3ff8b708da2ef13f640d7') in 0.004098 seconds 
+  Import took 0.009607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.662508 seconds.
+  path: Assets/4) Scripts/GruntGen.cs
+  artifactKey: Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/GruntGen.cs using Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5802f42d791c1aee33572c18d79696cb') in 0.002701 seconds 
+  Import took 0.007219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.672352 seconds.
+  path: Assets/4) Scripts/GruntGen.cs
+  artifactKey: Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/GruntGen.cs using Guid(e0536266dc4d0d24d80bd5b401b7cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fb563c254848466a11b9ee0d7b1a64') in 0.002740 seconds 
+  Import took 0.006972 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004377 seconds.
+Registered in 0.004307 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2E962EE0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000024094269EF0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E263E69D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002408D2863E0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2069E400 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002408E64C030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2C21AD10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000240884D9010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002408E66C020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B6E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file data-0000024091261030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.132 seconds
+- Completed reload, in  1.313 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1132ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (1313ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1158ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (672ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (575ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 126.7 MB.
+System memory in use after: 127.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3467.
+Total: 3.405300 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.130200 ms MarkObjects: 2.986000 ms  DeleteObjects: 0.015400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7.925837 seconds.
+  path: Assets/4) Scripts/SorcererGen.cs
+  artifactKey: Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/SorcererGen.cs using Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a794ad65a17e01cd5e062f6670e278a') in 0.009595 seconds 
+  Import took 0.013695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.444809 seconds.
+  path: Assets/4) Scripts/SorcererGen.cs
+  artifactKey: Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/SorcererGen.cs using Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdd9888e4b1adc837173084b49779fb') in 0.003564 seconds 
+  Import took 0.008792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001568 seconds.
+  path: Assets/4) Scripts/SorcererGen.cs
+  artifactKey: Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/SorcererGen.cs using Guid(a3b99737f6b4d4e42b71b01e26528ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdd9888e4b1adc837173084b49779fb') in 0.002795 seconds 
+  Import took 0.008845 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004176 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000024094269EF0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002408DE76020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000024091A52010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240B8696020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240904F0C80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000024091261030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.138 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1138ms)
+		BeginReloadAssembly (109ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (976ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (973ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (263ms)
+			SetupTypeCache (262ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
+			RebuildScriptCaches (35ms)
 			SetupLoadedEditorAssemblies (497ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
@@ -263,20 +388,20 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (77ms)
 				ProcessInitializeOnLoadAttributes (405ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 126.8 MB.
 System memory in use after: 127.0 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3466.
-Total: 3.546300 ms (FindLiveObjects: 0.249000 ms CreateObjectMapping: 0.121400 ms MarkObjects: 3.160000 ms  DeleteObjects: 0.015000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3470.
+Total: 3.301200 ms (FindLiveObjects: 0.266000 ms CreateObjectMapping: 0.136800 ms MarkObjects: 2.881600 ms  DeleteObjects: 0.016100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -288,1969 +413,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 183.629913 seconds.
-  path: Assets/3) Materials/LobberProjectileMat.mat
-  artifactKey: Guid(dd9e358aaefd89345bf9a51fc59288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3) Materials/LobberProjectileMat.mat using Guid(dd9e358aaefd89345bf9a51fc59288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd147f664eb5f961c69b9388d7701ce') in 0.183997 seconds 
-  Import took 0.188310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.214187 seconds.
-  path: Assets/3) Materials/LobberProjectileMat.mat
-  artifactKey: Guid(dd9e358aaefd89345bf9a51fc59288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3) Materials/LobberProjectileMat.mat using Guid(dd9e358aaefd89345bf9a51fc59288ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4c38b0e88211d44c11236cc8cdbaa9') in 0.015395 seconds 
-  Import took 0.019720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.023171 seconds.
-  path: Assets/2) Prefabs/projectile_lobber.prefab
-  artifactKey: Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/projectile_lobber.prefab using Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd3fd62dc5aabb4d0b6e68401d605df') in 0.027154 seconds 
-  Import took 0.031603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.516375 seconds.
-  path: Assets/2) Prefabs/projectile_lobber.prefab
-  artifactKey: Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/projectile_lobber.prefab using Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e862f4cf591da570b85bce68d98c7f') in 0.010368 seconds 
-  Import took 0.016079 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004408 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E3097DAC0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B402450 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2DB2C030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29B2B010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2C1C8CD0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28F4E040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.294 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1294ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1108ms)
-			LoadAssemblies (186ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (267ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (495ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (402ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.3 MB.
-System memory in use after: 132.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3548.
-Total: 3.364200 ms (FindLiveObjects: 0.265600 ms CreateObjectMapping: 0.131500 ms MarkObjects: 2.952600 ms  DeleteObjects: 0.013600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 310.873632 seconds.
-  path: Assets/2) Prefabs/projectile_lobber.prefab
-  artifactKey: Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/projectile_lobber.prefab using Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16cf60f04547098c84e43721dbf2123') in 0.136640 seconds 
-  Import took 0.141114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.573857 seconds.
-  path: Assets/2) Prefabs/projectile_lobber.prefab
-  artifactKey: Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/projectile_lobber.prefab using Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcef8d41b3d8d7280dee221843cda2b') in 0.011126 seconds 
-  Import took 0.015590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.989792 seconds.
-  path: Assets/4) Scripts/PlayerCharacters/PlayerProjectile.cs
-  artifactKey: Guid(aec86b0ceb3655446abb34ff976f3556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/PlayerCharacters/PlayerProjectile.cs using Guid(aec86b0ceb3655446abb34ff976f3556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5d9e3e6155b71b2fbc4241e774ee95') in 0.005943 seconds 
-  Import took 0.010473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000533 seconds.
-  path: Assets/4) Scripts/PlayerCharacters/PlayerProjectile.cs
-  artifactKey: Guid(aec86b0ceb3655446abb34ff976f3556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/PlayerCharacters/PlayerProjectile.cs using Guid(aec86b0ceb3655446abb34ff976f3556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5d9e3e6155b71b2fbc4241e774ee95') in 0.002505 seconds 
-  Import took 0.006997 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004140 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2FEA35F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B402450 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A16C170 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2E02B020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28D0BD60 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28F4E040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.278 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1278ms)
-		BeginReloadAssembly (114ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1108ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (135ms)
-			SetupLoadedEditorAssemblies (500ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (407ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.4 MB.
-System memory in use after: 132.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3587.
-Total: 3.435200 ms (FindLiveObjects: 0.245400 ms CreateObjectMapping: 0.114900 ms MarkObjects: 3.060100 ms  DeleteObjects: 0.013500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 180.198692 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24197d971636fba89774aea38fe34fc8') in 0.133347 seconds 
-  Import took 0.137786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.839415 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b60c01ea9760f57c2dacf9548f8f707') in 0.009790 seconds 
-  Import took 0.014016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.497020 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024e10db805f60d58cae8988f6db1d92') in 0.010167 seconds 
-  Import took 0.014540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.756074 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a33956fc62fce7f0a867444628dc54') in 0.011185 seconds 
-  Import took 0.015454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.384086 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0a9d2ca0f5bff07e876909f27e308a') in 0.009694 seconds 
-  Import took 0.014050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.380702 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af650e8f574fff4b49de8848465e5773') in 0.009973 seconds 
-  Import took 0.014400 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004187 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E30602C90 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C83020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F849010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29B2B010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28D0BD60 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B6E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1162ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1005ms)
-			LoadAssemblies (81ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (504ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (412ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.6 MB.
-System memory in use after: 132.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3627.
-Total: 3.768900 ms (FindLiveObjects: 0.382400 ms CreateObjectMapping: 0.203900 ms MarkObjects: 3.165500 ms  DeleteObjects: 0.016000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 71.366789 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6cfa02c240df400c399cee95ec3813') in 0.133600 seconds 
-  Import took 0.137899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca019d34860f2b9ddd310e7790c13f03') in 0.008730 seconds 
-  Import took 0.013025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.082378 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6535a33a825c83ebd31525537c41e9b8') in 0.009068 seconds 
-  Import took 0.014034 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004206 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2A387D10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B402450 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A16C170 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2E0522D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5F7BD0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B8B5020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.172 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1173ms)
-		BeginReloadAssembly (118ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1001ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (261ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (502ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (409ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.7 MB.
-System memory in use after: 133.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3666.
-Total: 3.465300 ms (FindLiveObjects: 0.278300 ms CreateObjectMapping: 0.146200 ms MarkObjects: 3.025600 ms  DeleteObjects: 0.014400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004206 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2A32DAA0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B402450 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E299F1020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A4C8C10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A14E020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.283 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1284ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1127ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (363ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (515ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (413ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.7 MB.
-System memory in use after: 133.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3669.
-Total: 3.768800 ms (FindLiveObjects: 0.278100 ms CreateObjectMapping: 0.136700 ms MarkObjects: 3.338000 ms  DeleteObjects: 0.015000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004229 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E262168F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F92C010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A16C170 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A4C8C10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A14E020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.255 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1256ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1103ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (504ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (407ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.7 MB.
-System memory in use after: 133.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3672.
-Total: 3.679300 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.149300 ms MarkObjects: 3.246700 ms  DeleteObjects: 0.015200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004334 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2EC0C490 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2C62C800 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A16C170 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2BD18020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A14E020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.271 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1271ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1108ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (366ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (500ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (407ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.7 MB.
-System memory in use after: 133.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3675.
-Total: 4.309300 ms (FindLiveObjects: 0.328700 ms CreateObjectMapping: 0.158800 ms MarkObjects: 3.805100 ms  DeleteObjects: 0.015900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 204.757456 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d1d5c5cc168056c830b4d2faaf7702') in 0.151099 seconds 
-  Import took 0.252917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.175723 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87147eb0f75c95eecde83112e6ca21c7') in 0.009638 seconds 
-  Import took 0.014467 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004261 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011023E9FB20 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C83020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29B2B010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A46DC40 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2EA09020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.196 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1197ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1025ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (525ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (434ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3714.
-Total: 3.541800 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.131700 ms MarkObjects: 3.115200 ms  DeleteObjects: 0.014200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004202 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E24AA1890 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E294A7030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E286FE010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2513B020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.258 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1258ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1105ms)
-			LoadAssemblies (83ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (595ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (503ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3717.
-Total: 3.860900 ms (FindLiveObjects: 0.428200 ms CreateObjectMapping: 0.130500 ms MarkObjects: 3.288600 ms  DeleteObjects: 0.012900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 56.095833 seconds.
-  path: Assets/4) Scripts/Lobber.cs
-  artifactKey: Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/Lobber.cs using Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18386aaa91f05c11d1929ccf1828079f') in 0.005120 seconds 
-  Import took 0.009434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000701 seconds.
-  path: Assets/4) Scripts/Lobber.cs
-  artifactKey: Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/Lobber.cs using Guid(9b0d9a5b4ef6c0e46926b08a1f511952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18386aaa91f05c11d1929ccf1828079f') in 0.002249 seconds 
-  Import took 0.006540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.936075 seconds.
-  path: Assets/4) Scripts/LobberGen.cs
-  artifactKey: Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/LobberGen.cs using Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d34d0cc613d0fd085f39ea172b0610') in 0.005774 seconds 
-  Import took 0.011003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001804 seconds.
-  path: Assets/4) Scripts/LobberGen.cs
-  artifactKey: Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/LobberGen.cs using Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d34d0cc613d0fd085f39ea172b0610') in 0.002235 seconds 
-  Import took 0.006426 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004419 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E25F50470 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010FD71EF4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A2247F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2BD16020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E292616B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.317 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1317ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1150ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (276ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (518ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (421ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3720.
-Total: 4.103700 ms (FindLiveObjects: 0.341300 ms CreateObjectMapping: 0.199600 ms MarkObjects: 3.545700 ms  DeleteObjects: 0.016000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 114.974864 seconds.
-  path: Assets/4) Scripts/LobberGen.cs
-  artifactKey: Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4) Scripts/LobberGen.cs using Guid(e90e167e03684a04f9103db5f14ba59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1a341f91190e2da9a2475aac16a4d1') in 0.006273 seconds 
-  Import took 0.010263 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004412 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E294F2470 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C83020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A2247F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2E0D1010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E292616B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.145 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1145ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (988ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (481ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (389ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3723.
-Total: 3.743200 ms (FindLiveObjects: 0.277000 ms CreateObjectMapping: 0.123100 ms MarkObjects: 3.328700 ms  DeleteObjects: 0.013600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004194 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011021A614C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F92C010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A2247F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2E0D1010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E292616B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.166 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1166ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1011ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (501ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (410ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3726.
-Total: 3.891900 ms (FindLiveObjects: 0.408600 ms CreateObjectMapping: 0.138200 ms MarkObjects: 3.329400 ms  DeleteObjects: 0.014800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 34.187956 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f75950323d26575cb88bfee9719e060') in 0.145847 seconds 
-  Import took 0.151070 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004413 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2EBEC480 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010FD71EF4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2DBC2020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.334 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1334ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1166ms)
-			LoadAssemblies (85ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (273ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (530ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (431ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3765.
-Total: 4.160400 ms (FindLiveObjects: 0.296000 ms CreateObjectMapping: 0.135600 ms MarkObjects: 3.681900 ms  DeleteObjects: 0.046100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004609 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2C1F1970 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001101FFDA020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2FDB4020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1154ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (992ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (483ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (393ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3768.
-Total: 3.653800 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.122700 ms MarkObjects: 3.237200 ms  DeleteObjects: 0.013400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004232 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2EBF0CA0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20C76B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E29B2B010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2FDB4020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.141 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1141ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (993ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (263ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (490ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (396ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3771.
-Total: 3.829400 ms (FindLiveObjects: 0.277200 ms CreateObjectMapping: 0.132000 ms MarkObjects: 3.404700 ms  DeleteObjects: 0.014200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 104.861812 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713087ebc152f09d64522a2764084c99') in 0.143179 seconds 
-  Import took 0.147795 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004682 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001102256A4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20C76B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C994D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20777E50 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.167 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1167ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1007ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (497ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (404ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.2 MB.
-System memory in use after: 133.4 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3810.
-Total: 3.930600 ms (FindLiveObjects: 0.295700 ms CreateObjectMapping: 0.139300 ms MarkObjects: 3.478900 ms  DeleteObjects: 0.015700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 28.719718 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eff387ddcc0051e0cb488c486054dbd') in 0.124474 seconds 
-  Import took 0.128623 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004619 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001102012D880 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20C76B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E299F1020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E30DFF020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.328 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1328ms)
-		BeginReloadAssembly (102ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1172ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (652ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (211ms)
-				ProcessInitializeOnLoadAttributes (425ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.3 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3849.
-Total: 4.127800 ms (FindLiveObjects: 0.318100 ms CreateObjectMapping: 0.131000 ms MarkObjects: 3.660800 ms  DeleteObjects: 0.016900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005510 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011020129060 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20C76B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E299F1020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000011026099020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.177 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1177ms)
-		BeginReloadAssembly (104ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1017ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (272ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (492ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (399ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.3 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3852.
-Total: 4.193000 ms (FindLiveObjects: 0.313700 ms CreateObjectMapping: 0.137500 ms MarkObjects: 3.724600 ms  DeleteObjects: 0.016400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004350 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011023E9CC90 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E20C76B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E299F1020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000011026099020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.432 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1432ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1260ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (567ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (465ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.3 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3855.
-Total: 3.808200 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.140700 ms MarkObjects: 3.325500 ms  DeleteObjects: 0.046400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004124 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2DF3A4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F92C010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C994D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000011026099020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1182ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1018ms)
-			LoadAssemblies (83ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (497ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (400ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.3 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3858.
-Total: 5.121900 ms (FindLiveObjects: 0.318300 ms CreateObjectMapping: 0.130200 ms MarkObjects: 4.655200 ms  DeleteObjects: 0.017200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004397 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011023229070 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F92C010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28C994D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2B0A0040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000011026099020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.285 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1286ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1129ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (261ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (523ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (423ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.4 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3861.
-Total: 4.358700 ms (FindLiveObjects: 0.371100 ms CreateObjectMapping: 0.172500 ms MarkObjects: 3.794100 ms  DeleteObjects: 0.019900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004369 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E2B9D07C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2F92C010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2C623030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E251C5010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E28B89700 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000011026099020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.179 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1179ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1005ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (266ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (487ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (395ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.4 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3864.
-Total: 3.733300 ms (FindLiveObjects: 0.291700 ms CreateObjectMapping: 0.139100 ms MarkObjects: 3.288100 ms  DeleteObjects: 0.013500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 222.879441 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1edcdf5d8affbff1fb2068e64cc7a15') in 0.153099 seconds 
-  Import took 0.157326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.547245 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36e24787142f0f64c10fd2d0a7fe735') in 0.008753 seconds 
-  Import took 0.013604 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004699 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000110230654D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010FD71EF4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2FB5AB10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2431E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.417 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1417ms)
-		BeginReloadAssembly (122ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1239ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (287ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (563ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (462ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3903.
-Total: 4.365900 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.129200 ms MarkObjects: 3.910400 ms  DeleteObjects: 0.015500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004246 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000011023069CF0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010FD71EF4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2FB5AB10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2431E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.179 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1180ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1016ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (495ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (404ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3906.
-Total: 3.949900 ms (FindLiveObjects: 0.330500 ms CreateObjectMapping: 0.152800 ms MarkObjects: 3.450700 ms  DeleteObjects: 0.015100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004328 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000010E28BB6D10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010FD71EF4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2A5EDA80 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2D796010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E24ABD030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E2431E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.151 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1151ms)
-		BeginReloadAssembly (102ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (994ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (484ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (391ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2917 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.7 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3909.
-Total: 4.077200 ms (FindLiveObjects: 0.280200 ms CreateObjectMapping: 0.191600 ms MarkObjects: 3.590200 ms  DeleteObjects: 0.014500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 79.765251 seconds.
-  path: Assets/2) Prefabs/Lobber.prefab
-  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f7301f87218e9dc033ad6e504b7a07') in 0.133930 seconds 
-  Import took 0.138105 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

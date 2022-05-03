@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sorcerer : BaseEnemy
 {
+    private Character character;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,13 @@ public class Sorcerer : BaseEnemy
             {
                 this.gameObject.SetActive(false);
             }
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            character.TakeDamage(8);
         }
     }
 }

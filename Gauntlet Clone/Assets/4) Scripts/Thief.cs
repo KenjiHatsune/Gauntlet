@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Thief : BaseEnemy
 {
+    private Character character;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,16 @@ public class Thief : BaseEnemy
     void Update()
     {
         Move();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Attack")
+        {
+            health--;
+        }
+        if (other.gameObject.tag == "Player")
+        {
+            character.TakeDamage(8);
+        }
     }
 }

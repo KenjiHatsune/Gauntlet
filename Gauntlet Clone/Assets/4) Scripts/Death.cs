@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Death : BaseEnemy
 {
+    private Character character;
     // Start is called before the first frame update
     void Start()
     {

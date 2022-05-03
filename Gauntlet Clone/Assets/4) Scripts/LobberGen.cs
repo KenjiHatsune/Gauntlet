@@ -23,4 +23,11 @@ public class LobberGen : MonoBehaviour
     {
         Instantiate(Lobber, spawn.transform.position, spawn.transform.rotation);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Attack")
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

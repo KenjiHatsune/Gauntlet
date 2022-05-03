@@ -19,6 +19,13 @@ public class SorcererGen : MonoBehaviour
     {
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Attack")
+        {
+            gameObject.SetActive(false);
+        }
+    }
     public void Spawn()
     {
         Instantiate(Sorcerer, transform.position, transform.rotation);

@@ -19,6 +19,14 @@ public class ThiefGen : MonoBehaviour
     {
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Attack")
+        {
+            gameObject.SetActive(false);
+        }
+
+    }
     public void Spawn()
     {
         Instantiate(Thief, transform.position, transform.rotation);
