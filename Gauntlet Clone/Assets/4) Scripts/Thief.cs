@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Thief : BaseEnemy
 {
-    private Character character;
+    private Adventurer character;
+    public float pointsTaken;
+    public GameObject pointDrop;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +23,12 @@ public class Thief : BaseEnemy
         if (other.gameObject.tag == "Attack")
         {
             health--;
+            Instantiate(pointDrop);
         }
         if (other.gameObject.tag == "Player")
         {
             character.TakeDamage(8);
+           
         }
     }
 }

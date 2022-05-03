@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Attack
+  - Grunt
+  - Lobber
+  - PointDrop
   layers:
   - Default
   - TransparentFX

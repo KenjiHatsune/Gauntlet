@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sorcerer : BaseEnemy
 {
-    private Character character;
+    private Adventurer character;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,19 @@ public class Sorcerer : BaseEnemy
     // Update is called once per frame
     void Update()
     {
-        Move(); 
+        Move();
+        DestroyEnemey();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            character.TakeDamage(8);
+        }
+        if (other.gameObject.tag == "Attack")
+        {
+            health--;
+        }
     }
     public void DestroyEnemey()
     {
@@ -24,13 +36,6 @@ public class Sorcerer : BaseEnemy
             {
                 this.gameObject.SetActive(false);
             }
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            character.TakeDamage(8);
         }
     }
 }
