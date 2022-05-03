@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2585666565923275913}
   - component: {fileID: 2585666565923275918}
   - component: {fileID: 5735826699793005998}
-  - component: {fileID: 2585666565923275914}
+  - component: {fileID: 7713482590640204480}
   m_Layer: 6
   m_Name: WizardOfLight
   m_TagString: Player
@@ -110,7 +110,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1, z: 1.4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2585666565923275914
+--- !u!114 &7713482590640204480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,13 +119,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2585666565923275919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a65ae76af19d048a8899b3dcaee834, type: 3}
+  m_Script: {fileID: 11500000, guid: 355a2113a52812b46ad70e5a7ee6b1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Armor: 0
   MoveTime: 0.25
   AttackPrefab: {fileID: 8905763872221861667, guid: e2cb3201617b1964fb828b04c094bad7, type: 3}
-  AttackElement: 5
+  AttackElement: 1
   AttackDamage: 1
   ProjectileSpeed: 10
   AttackDelay: 1

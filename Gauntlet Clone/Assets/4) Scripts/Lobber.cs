@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Lobber : BaseEnemy
 {
-    private Character character;
+    private Adventurer character;
     public float delay = 1f;
     public float StartTime = 1f;
     public GameObject projectile;

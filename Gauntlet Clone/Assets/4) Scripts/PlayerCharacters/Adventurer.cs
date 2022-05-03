@@ -54,12 +54,12 @@ public class Adventurer : MonoBehaviour
     [SerializeField] protected float AttackDelay = 1f;
     [Tooltip("How long the projectile lives for.")]
     [SerializeField] protected float ProjectileLifeSpan = 5f;
-    protected bool AttackReady = true;
+    public bool AttackReady = true;
 
     [Header("Skills")]
     [Tooltip("Cooldown for class skill.")]
     [SerializeField] protected float SkillDelay = 5f;
-    protected bool SkillReady = true;
+    public bool SkillReady = true;
 
     [Header("Utility Functions")]
     protected bool _moving;
@@ -456,7 +456,7 @@ public class Adventurer : MonoBehaviour
             {
                 GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 temp.transform.position = endPos;
-                temp.layer = LayerMask.NameToLayer("Wall");
+                temp.layer = LayerMask.NameToLayer("PlayerSpecificWall");
                 temp.GetComponent<MeshFilter>().mesh = null;
                 Destroy(temp, MoveTime);
 

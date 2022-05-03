@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sorcerer : BaseEnemy
 {
-    private Character character;
+    private Adventurer character;
     // Start is called before the first frame update
     void Start()
     {

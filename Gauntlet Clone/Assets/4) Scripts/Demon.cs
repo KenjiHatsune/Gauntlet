@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Demon : BaseEnemy
 {
-    private Character character;
+    private Adventurer character;
     // Start is called before the first frame update
     void Start()
     {
