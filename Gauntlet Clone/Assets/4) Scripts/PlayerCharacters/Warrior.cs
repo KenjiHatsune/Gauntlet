@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Warrior : Character
+public class Warrior : Adventurer
 {
+
     public void Cleave(InputAction.CallbackContext context)
     {
         if (context.performed && SkillReady)

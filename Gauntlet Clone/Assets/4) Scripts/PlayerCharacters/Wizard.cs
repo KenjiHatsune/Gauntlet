@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Wizard : Character
+public class Wizard : Adventurer
 {
+
     public void ElementalShift(InputAction.CallbackContext context)
     {
-        if (context.performed && SkillReady)
+        if (context.performed)
         {
             ///Switching Element.\\\
             int temp = (int)AttackElement;
@@ -20,44 +21,47 @@ public class Wizard : Character
             AttackElement = (Element)temp;
 
             ///Exploding Wizard\\\
-            float tempSpeed = ProjectileSpeed / 2;
-            for (int index = 0; index < 8; index++)
+            if (SkillReady)
             {
-                GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
-                switch (index)
+                float tempSpeed = ProjectileSpeed / 2;
+                for (int index = 0; index < 8; index++)
                 {
-                    case 0:
-                        projectile.GetComponent<Rigidbody>().velocity = (transform.forward * tempSpeed);
-                        break;
-                    case 1:
-                        projectile.GetComponent<Rigidbody>().velocity = ((transform.forward - transform.right) * tempSpeed);
-                        break;
-                    case 2:
-                        projectile.GetComponent<Rigidbody>().velocity = ((transform.forward + transform.right) * tempSpeed);
-                        break;
-                    case 3:
-                        projectile.GetComponent<Rigidbody>().velocity = ((transform.right) * tempSpeed);
-                        break;
-                    case 4:
-                        projectile.GetComponent<Rigidbody>().velocity = ((-transform.right) * tempSpeed);
-                        break;
-                    case 5:
-                        projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward + transform.right) * tempSpeed);
-                        break;
-                    case 6:
-                        projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward - transform.right) * tempSpeed);
-                        break;
-                    case 7:
-                        projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward) * tempSpeed);
-                        break;
-                    default:
-                        break;
+                    GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
+                    switch (index)
+                    {
+                        case 0:
+                            projectile.GetComponent<Rigidbody>().velocity = (transform.forward * tempSpeed);
+                            break;
+                        case 1:
+                            projectile.GetComponent<Rigidbody>().velocity = ((transform.forward - transform.right) * tempSpeed);
+                            break;
+                        case 2:
+                            projectile.GetComponent<Rigidbody>().velocity = ((transform.forward + transform.right) * tempSpeed);
+                            break;
+                        case 3:
+                            projectile.GetComponent<Rigidbody>().velocity = ((transform.right) * tempSpeed);
+                            break;
+                        case 4:
+                            projectile.GetComponent<Rigidbody>().velocity = ((-transform.right) * tempSpeed);
+                            break;
+                        case 5:
+                            projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward + transform.right) * tempSpeed);
+                            break;
+                        case 6:
+                            projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward - transform.right) * tempSpeed);
+                            break;
+                        case 7:
+                            projectile.GetComponent<Rigidbody>().velocity = ((-transform.forward) * tempSpeed);
+                            break;
+                        default:
+                            break;
+                    }
+
+                    projectile.GetComponent<PlayerProjectile>().LifeSpan = 0.4f;
                 }
 
-                projectile.GetComponent<PlayerProjectile>().LifeSpan = 0.4f;
+                StartCoroutine("SkillCooldown");
             }
-
-            StartCoroutine("SkillCooldown");
         }
     }
 }
