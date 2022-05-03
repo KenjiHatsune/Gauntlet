@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Grunt : BaseEnemy
 {
+    private Character character;
     
+
     // Start is called before the first frame update
     void Start()
     {
-        health = 2;
+        //health = 2;
         speed = 2;
+        player = player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -20,22 +23,15 @@ public class Grunt : BaseEnemy
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "")
+        if(other.gameObject.tag == "Attack")
         {
-            health -= 1;
+            health--;
         }
-        if (other.gameObject.tag == "")
+        if(other.gameObject.tag == "Player")
         {
-            health -= 1;
+            character.TakeDamage(2);
         }
-        if (other.gameObject.tag == "")
-        {
-            health -= 1;
-        }
-        if (other.gameObject.tag == "")
-        {
-            health -= 1;
-        }
+       
     }
     public void DestroyEnemey()
     {

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Demon : BaseEnemy
 {
-    //private Character character;
+    private Character character;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -20,7 +20,17 @@ public class Demon : BaseEnemy
     {
         if(other.gameObject.tag == "Player")
         {
-            //character.takeDamage(8);
+            character.TakeDamage(8);
+        }
+    }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Demon")
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }
