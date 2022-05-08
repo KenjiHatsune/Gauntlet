@@ -15,6 +15,7 @@ public class Ghost : BaseEnemy
     void Update()
     {
         Move();
+        DestroyEnemey();
     }
     private void OnTriggerEnter(Collider other)
     {

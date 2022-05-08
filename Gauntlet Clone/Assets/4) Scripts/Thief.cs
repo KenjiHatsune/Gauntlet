@@ -17,6 +17,7 @@ public class Thief : BaseEnemy
     void Update()
     {
         Move();
+        DestroyEnemey();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -29,6 +30,16 @@ public class Thief : BaseEnemy
         {
             character.TakeDamage(8);
            
+        }
+    }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Thief")
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

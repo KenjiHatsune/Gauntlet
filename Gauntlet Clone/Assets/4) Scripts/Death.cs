@@ -8,7 +8,7 @@ public class Death : BaseEnemy
     // Start is called before the first frame update
     void Start()
     {
-        //health = 200;
+        health = 200;
         speed = 4;
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -17,11 +17,23 @@ public class Death : BaseEnemy
     void Update()
     {
         Move();
+        DestroyEnemey();
     }
-  
-    public void DrainHealth()
+    private void OnTriggerEnter(Collider other)
     {
-
+        if (other.gameObject.tag == "Player")
+        {
+            StartCoroutine("Drain", 3);
+        }
+        if (other.gameObject.tag == "Attack")
+        {
+            health--;
+        }
+    }
+    IEnumerator Drain(int seconds)
+    {
+        yield return new WaitForSeconds(2);
+        character.TakeDamage(10);
     }
     public void DestroyEnemey()
     {
