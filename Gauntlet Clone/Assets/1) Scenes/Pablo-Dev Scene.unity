@@ -267,6 +267,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3651792168465022420, guid: 3a1a40f58e1cf0b4f8c26c4ff2b8bf1f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3651792168465022421, guid: 3a1a40f58e1cf0b4f8c26c4ff2b8bf1f, type: 3}
       propertyPath: m_Name
       value: GruntGen
@@ -360,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6561771619728286640, guid: e651f776cbfa36c4780cea7a4f354284, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6561771619728286640, guid: e651f776cbfa36c4780cea7a4f354284, type: 3}
       propertyPath: m_TagString
@@ -531,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1983058269
 MonoBehaviour:
   m_ObjectHideFlags: 0
