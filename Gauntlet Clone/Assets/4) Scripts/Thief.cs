@@ -5,6 +5,8 @@ using UnityEngine;
 public class Thief : BaseEnemy
 {
     private Adventurer character;
+    public float pointsTaken;
+    public GameObject pointDrop;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +17,29 @@ public class Thief : BaseEnemy
     void Update()
     {
         Move();
+        DestroyEnemey();
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Attack")
         {
             health--;
+            Instantiate(pointDrop);
         }
         if (other.gameObject.tag == "Player")
         {
             character.TakeDamage(8);
+           
+        }
+    }
+    public void DestroyEnemey()
+    {
+        if (health == 0)
+        {
+            if (this.gameObject.tag == "Thief")
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

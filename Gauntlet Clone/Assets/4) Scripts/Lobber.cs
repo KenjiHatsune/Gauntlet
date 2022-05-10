@@ -12,6 +12,7 @@ public class Lobber : BaseEnemy
     // Start is called before the first frame update
     void Start()
     {
+       
         player = GameObject.FindGameObjectWithTag("Player");
         InvokeRepeating("Throw", delay, StartTime);
     }
@@ -19,13 +20,15 @@ public class Lobber : BaseEnemy
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move(); 
+        DestroyEnemey();
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Attack")
         {
             health--;
+           
         }
         if (other.gameObject.tag == "Player")
         {
