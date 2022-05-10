@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 17
+  controlID: 38
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18
+  controlID: 39
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 19
+  controlID: 40
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,22 +498,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3) Materials/KeySprite
+    - Assets/4) Scripts/PlayerCharacters
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/3) Materials/KeySprite
+  - Assets/4) Scripts/PlayerCharacters
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\Colin\Documents\TheGitHub\Gauntlet\Gauntlet Clone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a4f0000
-    m_LastClickedID: 20378
-    m_ExpandedIDs: 00000000064b0000384b000000ca9a3b
+    m_SelectedIDs: 2a4e0000
+    m_LastClickedID: 20010
+    m_ExpandedIDs: 000000007c4d0000b44d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000064b0000
+    m_ExpandedIDs: 000000007c4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -629,7 +629,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 540
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -661,24 +661,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 160}
-      m_SelectedIDs: 40c1ffff
-      m_LastClickedID: -16064
-      m_ExpandedIDs: 54d0ffffb2d3ffff90eeffff8af8ffffb8f9ffff4cfbffff
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: ccf3ffff4cfbffff7e4a0000b04a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Image (3)
-        m_OriginalName: Image (3)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -14062
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1747.9437, y: 469.71902, z: -692.2783}
+    m_Target: {x: 1371.2448, y: 615.2522, z: -136.29686}
     speed: 2
-    m_Value: {x: 1743.587, y: 470.48544, z: -691.7878}
+    m_Value: {x: 1344.0975, y: 623.0366, z: -134.18327}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -775,11 +775,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.000000007989264, y: -0.00000005083924, z: 0.000000009346481, w: 1.0000001}
+    m_Value: {x: -0.000000009333861, y: 0.000000066741116, z: -0.000000021881235, w: -0.99999994}
   m_Size:
-    m_Target: 130.12103
+    m_Target: 560.68835
     speed: 2
-    m_Value: 136.2524
+    m_Value: 587.1082
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -797,7 +797,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.11748686, y: -0.7476211, z: 0.13744552, w: 0.6390892}
+  m_LastSceneViewRotation: {x: -0.12223541, y: 0.8740357, z: -0.2865547, w: -0.37283677}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
