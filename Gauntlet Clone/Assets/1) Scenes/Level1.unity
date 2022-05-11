@@ -339,6 +339,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8137549879616021773, guid: 5b08cb28d9942b644b7e910361ef738e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 488.09396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137549879616021773, guid: 5b08cb28d9942b644b7e910361ef738e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 199.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137549880017995463, guid: 5b08cb28d9942b644b7e910361ef738e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 170.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137549880017995463, guid: 5b08cb28d9942b644b7e910361ef738e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 151.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8137549880277037958, guid: 5b08cb28d9942b644b7e910361ef738e, type: 3}
       propertyPath: m_Name
       value: LevelBoundaries_grp
