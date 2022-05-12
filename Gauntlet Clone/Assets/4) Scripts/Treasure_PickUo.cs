@@ -6,6 +6,6 @@ public class Treasure_PickUo : Adventurer
 {
     public void Treasure()
     {
-        Score += 100;
+        _score += 100;
     }
 }

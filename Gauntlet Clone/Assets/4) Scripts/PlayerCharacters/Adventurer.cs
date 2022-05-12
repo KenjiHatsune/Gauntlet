@@ -27,19 +27,42 @@ public enum CharacterClass
 public class Adventurer : MonoBehaviour
 {
     [Header("Basic Stats")]
-    protected int Health = 0;
+    protected int _health = 0;
+    public int Health
+    {
+        get { return _health; }
+        set { _health = value; }
+    }
     [Tooltip("Reduces the damage taken from hostile attacks.")]
     [SerializeField] protected int Armor = 0;
-    protected int Score = 0;
+    protected int _score = 0;
+    public int Score
+    {
+        get { return _score; }
+        set { _score = value; }
+    }
     [Tooltip("How long it takes to finish a 'move.'")]
     [SerializeField] protected float MoveTime = 0.25f;
     protected float _sensitivity = 0.4f;
     protected bool visible = true;
     protected bool vulnerable = true;
 
+    [Header("LinkedComponents")]
+    public PlayerInputHandler Agent;
+
     [Header("Inventory")]
-    protected int Keys = 0;
-    protected int MagicPotions = 0;
+    protected int _keys = 0;
+    public int Keys
+    {
+        get { return _keys; }
+        set { _keys = value; }
+    }
+    protected int _magicPotions = 0;
+    public int MagicPotions
+    {
+        get { return _magicPotions; }
+        set { _magicPotions = value; }
+    }
 
     [Header("Attacks")]
     [Tooltip("Projectile of player's attack.")]
@@ -100,12 +123,12 @@ public class Adventurer : MonoBehaviour
 
     protected void Awake()
     {
-        startPos = transform.position;
-        endPos = transform.position;
+        Health = 750;
 
         AttackReady = true;
 
         StartCoroutine(PlayerMovement());
+        StartCoroutine(FadeAway());
 
         if (_characterClass == CharacterClass.Valkyrie)
         {
@@ -130,6 +153,9 @@ public class Adventurer : MonoBehaviour
             damageTaken -= Armor;
             if (damageTaken > 0)
                 Health -= damageTaken;
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
         }
     }
 
@@ -152,16 +178,16 @@ public class Adventurer : MonoBehaviour
     public void UsePotion()
     {
         //Ensuring the action only happens once and that the player has a Potion to use.
-        if (MagicPotions <= 0) return;
+        if (_magicPotions <= 0) return;
 
         //Using Potion.
     }
 
     protected bool UseKey()
     {
-        if (Keys >= 0)
+        if (_keys >= 0)
         {
-            Keys--;
+            _keys--;
             return true;
         }
 
@@ -477,10 +503,21 @@ public class Adventurer : MonoBehaviour
     //This causes the player to slowly die as time passes by. They lose 1 HP each second.
     protected IEnumerator FadeAway()
     {
-        while (Health > 0)
+        while (true)
         {
-            Health--;
-            yield return new WaitForSeconds(1f);
+            while (Health > 0)
+            {
+                yield return new WaitForSeconds(1f);
+                Health--;
+                Agent.OrderUIUpdate();
+            }
+
+            if (Health < 0)
+            {
+                Agent.KillPlayer();
+            }
+
+            yield return new WaitForSeconds(0.25f);
         }
     }
 

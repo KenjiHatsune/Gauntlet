@@ -49,6 +49,22 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""UseCredit"",
+                    ""type"": ""Button"",
+                    ""id"": ""546ebfcd-1242-43bf-b4e3-e7503be49593"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""AddCredit"",
+                    ""type"": ""Button"",
+                    ""id"": ""ddcdd532-aaff-424e-a694-ddf8fbdcbbb0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -183,6 +199,39 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""032b78fa-76fc-4271-b03e-487244c05e95"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseCredit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ed5f484b-d1df-43e9-89e2-806b6beb473b"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseCredit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6acedbe5-de68-4636-b5c4-f0efcaff2843"",
+                    ""path"": ""<Keyboard>/backspace"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AddCredit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -195,6 +244,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Player_UsePotion = m_Player.FindAction("UsePotion", throwIfNotFound: true);
         m_Player_UseAbility = m_Player.FindAction("UseAbility", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
+        m_Player_UseCredit = m_Player.FindAction("UseCredit", throwIfNotFound: true);
+        m_Player_AddCredit = m_Player.FindAction("AddCredit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -248,6 +299,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_UsePotion;
     private readonly InputAction m_Player_UseAbility;
     private readonly InputAction m_Player_Attack;
+    private readonly InputAction m_Player_UseCredit;
+    private readonly InputAction m_Player_AddCredit;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -256,6 +309,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @UsePotion => m_Wrapper.m_Player_UsePotion;
         public InputAction @UseAbility => m_Wrapper.m_Player_UseAbility;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
+        public InputAction @UseCredit => m_Wrapper.m_Player_UseCredit;
+        public InputAction @AddCredit => m_Wrapper.m_Player_AddCredit;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -277,6 +332,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @UseCredit.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseCredit;
+                @UseCredit.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseCredit;
+                @UseCredit.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUseCredit;
+                @AddCredit.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAddCredit;
+                @AddCredit.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAddCredit;
+                @AddCredit.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAddCredit;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -293,6 +354,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @UseCredit.started += instance.OnUseCredit;
+                @UseCredit.performed += instance.OnUseCredit;
+                @UseCredit.canceled += instance.OnUseCredit;
+                @AddCredit.started += instance.OnAddCredit;
+                @AddCredit.performed += instance.OnAddCredit;
+                @AddCredit.canceled += instance.OnAddCredit;
             }
         }
     }
@@ -303,5 +370,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnUsePotion(InputAction.CallbackContext context);
         void OnUseAbility(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnUseCredit(InputAction.CallbackContext context);
+        void OnAddCredit(InputAction.CallbackContext context);
     }
 }
