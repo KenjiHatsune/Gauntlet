@@ -92,7 +92,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3274563343921164646}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -115,7 +115,7 @@ MonoBehaviour:
   limitRange: 5
   damage: 0
   player: {fileID: 0}
-  delay: 1
+  delay: 3
   StartTime: 1
   projectile: {fileID: 8589483833700177071, guid: 33bf5fdf9a9da4340a2e69720a92727f, type: 3}
   ProjectileSpeed: 5

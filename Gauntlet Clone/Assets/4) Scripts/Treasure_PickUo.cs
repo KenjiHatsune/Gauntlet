@@ -8,4 +8,11 @@ public class Treasure_PickUo : Adventurer
     {
         Score += 100;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
