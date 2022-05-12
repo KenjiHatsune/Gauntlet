@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 248017536035492280}
   - component: {fileID: 248017536035492287}
   - component: {fileID: 3697217557378928726}
-  - component: {fileID: 248017536035492283}
+  - component: {fileID: 647137543170323346}
   m_Layer: 6
   m_Name: ValkyrieOfLight
   m_TagString: Player
@@ -110,7 +110,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1, z: 1.4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &248017536035492283
+--- !u!114 &647137543170323346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 248017536035492286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd33f50dbbac0bc48b846d54582881db, type: 3}
+  m_Script: {fileID: 11500000, guid: 355a2113a52812b46ad70e5a7ee6b1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Armor: 0
@@ -141,5 +141,3 @@ MonoBehaviour:
   GFPercentage: 0.5
   BonusProjectileSpeed: 0
   BonusMoveSpeed: 0
-  BonusArmor: 2
-  GFPercentage: 0.5

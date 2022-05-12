@@ -74,11 +74,35 @@ MonoBehaviour:
     m_ActionId: 00814242-dd19-4f4d-923b-c65dba41ab00
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3297867526595092419}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: UsePotion
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3a990801-9664-4797-a72d-9f8a951bfc80
     m_ActionName: Player/UsePotion[/Keyboard/q]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3297867526595092419}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: UseSkill
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8025edc2-c3fa-4497-8733-8767e1316d23
     m_ActionName: Player/UseAbility[/Keyboard/e]
   - m_PersistentCalls:
@@ -114,8 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439e93299b7529a4e9b251ec31dde275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _adventurer: {fileID: 0}
   _playerCharacters:
   - {fileID: 4947534931349598090, guid: a229b4a5e1a2a8d48aec68c0e8a210b6, type: 3}
   - {fileID: 2585666565923275919, guid: 6979324f43e2dc943b75de7d720320b2, type: 3}
   - {fileID: 248017536035492286, guid: f95171be455afd84281de14e117f1351, type: 3}
   - {fileID: 7408598371481886208, guid: bec812f587d8f774db24144f2f7b87af, type: 3}
+  _character: {fileID: 0}
