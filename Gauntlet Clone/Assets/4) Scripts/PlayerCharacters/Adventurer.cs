@@ -42,7 +42,7 @@ public class Adventurer : MonoBehaviour
         set { _score = value; }
     }
     [Tooltip("How long it takes to finish a 'move.'")]
-    [SerializeField] protected float MoveTime = 0.25f;
+    [SerializeField] protected float _moveSpeed = 0.25f;
     protected float _sensitivity = 0.4f;
     protected bool visible = true;
     protected bool vulnerable = true;
@@ -90,10 +90,9 @@ public class Adventurer : MonoBehaviour
     protected Direction currentDirection = Direction.none;
     protected Vector3 startPos;
     protected Vector3 endPos;
-    protected float _moveTimePassed;
     protected float _attackTimePassed;
     protected float _skillTimePassed;
-    [SerializeField] protected LayerMask _wallLayer;
+    Vector3 _moveVec = Vector3.zero;
 
     [Header("Class")]
     [SerializeField] private CharacterClass _characterClass;
@@ -127,7 +126,10 @@ public class Adventurer : MonoBehaviour
 
         AttackReady = true;
 
-        StartCoroutine(PlayerMovement());
+        //Setting up Rigidbody
+        _RigBod = gameObject.AddComponent<Rigidbody>();
+        _RigBod.constraints = RigidbodyConstraints.FreezeRotation;
+
         StartCoroutine(FadeAway());
 
         if (_characterClass == CharacterClass.Valkyrie)
@@ -142,8 +144,15 @@ public class Adventurer : MonoBehaviour
         if (_characterClass == CharacterClass.ElvenOne)
         {
             ProjectileSpeed += BonusProjectileSpeed;
-            MoveTime /= BonusMoveSpeed;
+            _moveSpeed /= BonusMoveSpeed;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        //Adjusting Player Speed
+        Vector3 temp = Vector3.Lerp(_moveVec, _RigBod.velocity, 0.35f);
+        _RigBod.velocity = temp;
     }
 
     public void TakeDamage(int damageTaken)
@@ -180,12 +189,25 @@ public class Adventurer : MonoBehaviour
         //Ensuring the action only happens once and that the player has a Potion to use.
         if (_magicPotions <= 0) return;
 
+        Debug.Log("Potion Used");
+        MagicPotions--;
+
         //Using Potion.
+        GameObject[] foesToDie = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < foesToDie.Length; i++)
+        {
+            //If the enemy is visible, it will die. If not, it will not.
+            if (foesToDie[i].GetComponent<Renderer>().isVisible)
+                Destroy(foesToDie[i]);
+        }
+
+        //Updating UI HP Readout
+        Agent.OrderUIUpdate();
     }
 
     protected bool UseKey()
     {
-        if (_keys >= 0)
+        if (_keys > 0)
         {
             _keys--;
             return true;
@@ -195,104 +217,88 @@ public class Adventurer : MonoBehaviour
             return false;
     }
 
-    //This translates the player's inputs into motion.
-    public void Move(Vector2 input)
-    {
-        //Returning if no input.
-        if (input == Vector2.zero)
-            currentDirection = Direction.none;
-
-        //Determining which direction the player wants to go.
-        else if (input.y >= _sensitivity)
-        {
-            if (input.x >= _sensitivity)
-                currentDirection = Direction.upRight;
-            else if (input.x <= -_sensitivity)
-                currentDirection = Direction.upLeft;
-
-            else
-                currentDirection = Direction.up;
-        }
-        else if (input.y <= -_sensitivity)
-        {
-            if (input.x >= _sensitivity)
-                currentDirection = Direction.downRight;
-            else if (input.x <= -_sensitivity)
-                currentDirection = Direction.downLeft;
-
-            else
-                currentDirection = Direction.down;
-        }
-        else if (input.x >= _sensitivity)
-            currentDirection = Direction.right;
-        else if (input.x <= -_sensitivity)
-            currentDirection = Direction.left;
-    }
-
     protected void OnCollisionEnter(Collision collision)
     {
         //Opening Door on Collision.
         if (collision.gameObject.CompareTag("Door") && UseKey())
         {
             Destroy(collision.gameObject);
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
         }
     }
 
-    //This checks to make sure the player is not trying to walk through a wall.
-    protected bool CheckWalls()
+    protected void OnTriggerEnter(Collider other)
     {
-        Ray LookingDirection = new Ray(transform.position, Vector3.up);
-        RaycastHit hit;
-
-        switch (currentDirection)
+        if (other.gameObject.CompareTag("Potion"))
         {
-            case Direction.none:
-                return false;
-            case Direction.up:
-                LookingDirection = new Ray(transform.position, Vector3.forward);
-                break;
-            case Direction.upLeft:
-                LookingDirection = new Ray(transform.position, Vector3.forward + Vector3.left);
-                endPos = transform.position + Vector3.forward + Vector3.left;
-                break;
-            case Direction.left:
-                LookingDirection = new Ray(transform.position, Vector3.left);
-                endPos = transform.position + Vector3.left;
-                break;
-            case Direction.downLeft:
-                LookingDirection = new Ray(transform.position, Vector3.back + Vector3.left);
-                endPos = transform.position + Vector3.back + Vector3.left;
-                break;
-            case Direction.down:
-                LookingDirection = new Ray(transform.position, Vector3.back);
-                endPos = transform.position + Vector3.back;
-                break;
-            case Direction.downRight:
-                LookingDirection = new Ray(transform.position, Vector3.back + Vector3.right);
-                endPos = transform.position + Vector3.back + Vector3.right;
-                break;
-            case Direction.right:
-                LookingDirection = new Ray(transform.position, Vector3.right);
-                endPos = transform.position + Vector3.right;
-                break;
-            case Direction.upRight:
-                LookingDirection = new Ray(transform.position, Vector3.forward + Vector3.right);
-                endPos = transform.position + Vector3.forward + Vector3.right;
-                break;
+            MagicPotions++;
 
-            default:
-                Debug.LogError("currentDirection in Character is an invalid value. Doing nothing till fixed.");
-                break;
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+
+            //Destroying Item
+            Destroy(other.gameObject);
         }
 
-        //If something is hit, the player cannot move this direction.
-        if (Physics.Raycast(LookingDirection, out hit, 1.1f, _wallLayer))
+        if (other.gameObject.CompareTag("Key"))
         {
-            return false;
+            Keys++;
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+
+            //Destroying Item
+            Destroy(other.gameObject);
         }
 
-        else
-            return true;
+        if (other.gameObject.CompareTag("Food"))
+        {
+            Health += 400;
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+
+            //Destroying Item
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Treasure"))
+        {
+            Score += 1500;
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+
+            //Destroying Item
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("SmolTreasure"))
+        {
+            Score += 500;
+
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+
+            //Destroying Item
+            Destroy(other.gameObject);
+        }
+    }
+
+    //This translates the player's inputs into motion.
+    public void Move(Vector2 input)
+    {
+        _moveVec.x = input.x;
+        _moveVec.y = 0f;
+        _moveVec.z = input.y;
+
+        //Looking in the direction the player's moving.
+        Vector3 tempLook = _moveVec + transform.position;
+        transform.LookAt(tempLook);
+
+        _moveVec *= _moveSpeed;
     }
 
     /// Skills \\\
@@ -423,83 +429,6 @@ public class Adventurer : MonoBehaviour
 
 
     /// IEnumerators \\\
-
-    //This handles the actual movement of the player character.
-    protected IEnumerator PlayerMovement()
-    {
-        while (true)
-        {
-            _moveTimePassed = 0f;
-            switch (currentDirection)
-            {
-                case Direction.none:
-                    startPos = transform.position;
-                    endPos = transform.position;
-                    break;
-                case Direction.up:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.forward;
-                    break;
-                case Direction.upLeft:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.forward + Vector3.left;
-                    break;
-                case Direction.left:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.left;
-                    break;
-                case Direction.downLeft:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.back + Vector3.left;
-                    break;
-                case Direction.down:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.back;
-                    break;
-                case Direction.downRight:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.back + Vector3.right;
-                    break;
-                case Direction.right:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.right;
-                    break;
-                case Direction.upRight:
-                    startPos = transform.position;
-                    endPos = transform.position + Vector3.forward + Vector3.right;
-                    break;
-
-                default:
-                    Debug.LogError("currentDirection in Character is an invalid value. Doing nothing till fixed.");
-                    break;
-            }
-
-            transform.LookAt(endPos);
-
-
-            //Verifying the player can move in this direction.
-            if (CheckWalls())
-            {
-                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                temp.transform.position = endPos;
-                temp.layer = LayerMask.NameToLayer("PlayerSpecificWall");
-                temp.GetComponent<MeshFilter>().mesh = null;
-                Destroy(temp, MoveTime);
-
-                while (_moveTimePassed < MoveTime)
-                {
-                    yield return new WaitForFixedUpdate();
-
-                    _moveTimePassed += Time.fixedDeltaTime;
-                    transform.position = Vector3.Lerp(startPos, endPos, _moveTimePassed / MoveTime);
-                }
-            }
-
-            else
-                yield return new WaitForFixedUpdate();
-        }
-    }
-
     //This causes the player to slowly die as time passes by. They lose 1 HP each second.
     protected IEnumerator FadeAway()
     {
@@ -565,3 +494,171 @@ public class Adventurer : MonoBehaviour
         vulnerable = true;
     }
 }
+/*
+ * Archived Scripts.
+    public void Move(Vector2 input)
+    {
+        //Returning if no input.
+        if (input == Vector2.zero)
+            currentDirection = Direction.none;
+
+        //Determining which direction the player wants to go.
+        else if (input.y >= _sensitivity)
+        {
+            if (input.x >= _sensitivity)
+                currentDirection = Direction.upRight;
+            else if (input.x <= -_sensitivity)
+                currentDirection = Direction.upLeft;
+
+            else
+                currentDirection = Direction.up;
+        }
+        else if (input.y <= -_sensitivity)
+        {
+            if (input.x >= _sensitivity)
+                currentDirection = Direction.downRight;
+            else if (input.x <= -_sensitivity)
+                currentDirection = Direction.downLeft;
+
+            else
+                currentDirection = Direction.down;
+        }
+        else if (input.x >= _sensitivity)
+            currentDirection = Direction.right;
+        else if (input.x <= -_sensitivity)
+            currentDirection = Direction.left;
+    }
+
+
+    //This checks to make sure the player is not trying to walk through a wall.
+    protected bool CheckWalls()
+    {
+        Ray LookingDirection = new Ray(transform.position, Vector3.up);
+        RaycastHit hit;
+
+        switch (currentDirection)
+        {
+            case Direction.none:
+                return false;
+            case Direction.up:
+                LookingDirection = new Ray(transform.position, Vector3.forward);
+                break;
+            case Direction.upLeft:
+                LookingDirection = new Ray(transform.position, Vector3.forward + Vector3.left);
+                endPos = transform.position + Vector3.forward + Vector3.left;
+                break;
+            case Direction.left:
+                LookingDirection = new Ray(transform.position, Vector3.left);
+                endPos = transform.position + Vector3.left;
+                break;
+            case Direction.downLeft:
+                LookingDirection = new Ray(transform.position, Vector3.back + Vector3.left);
+                endPos = transform.position + Vector3.back + Vector3.left;
+                break;
+            case Direction.down:
+                LookingDirection = new Ray(transform.position, Vector3.back);
+                endPos = transform.position + Vector3.back;
+                break;
+            case Direction.downRight:
+                LookingDirection = new Ray(transform.position, Vector3.back + Vector3.right);
+                endPos = transform.position + Vector3.back + Vector3.right;
+                break;
+            case Direction.right:
+                LookingDirection = new Ray(transform.position, Vector3.right);
+                endPos = transform.position + Vector3.right;
+                break;
+            case Direction.upRight:
+                LookingDirection = new Ray(transform.position, Vector3.forward + Vector3.right);
+                endPos = transform.position + Vector3.forward + Vector3.right;
+                break;
+
+            default:
+                Debug.LogError("currentDirection in Character is an invalid value. Doing nothing till fixed.");
+                break;
+        }
+
+        //If something is hit, the player cannot move this direction.
+        if (Physics.Raycast(LookingDirection, out hit, 1.1f, _wallLayer))
+        {
+            return false;
+        }
+
+        else
+            return true;
+    }
+    //This handles the actual movement of the player character.
+    protected IEnumerator PlayerMovement()
+    {
+        while (true)
+        {
+            _moveSpeed = 0f;
+            switch (currentDirection)
+            {
+                case Direction.none:
+                    startPos = transform.position;
+                    endPos = transform.position;
+                    break;
+                case Direction.up:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.forward;
+                    break;
+                case Direction.upLeft:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.forward + Vector3.left;
+                    break;
+                case Direction.left:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.left;
+                    break;
+                case Direction.downLeft:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.back + Vector3.left;
+                    break;
+                case Direction.down:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.back;
+                    break;
+                case Direction.downRight:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.back + Vector3.right;
+                    break;
+                case Direction.right:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.right;
+                    break;
+                case Direction.upRight:
+                    startPos = transform.position;
+                    endPos = transform.position + Vector3.forward + Vector3.right;
+                    break;
+
+                default:
+                    Debug.LogError("currentDirection in Character is an invalid value. Doing nothing till fixed.");
+                    break;
+            }
+
+            transform.LookAt(endPos);
+
+
+            //Verifying the player can move in this direction.
+            if (CheckWalls())
+            {
+                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                temp.transform.position = endPos;
+                temp.layer = LayerMask.NameToLayer("PlayerSpecificWall");
+                temp.GetComponent<MeshFilter>().mesh = null;
+                Destroy(temp, MoveTime);
+
+                while (_moveSpeed < MoveTime)
+                {
+                    yield return new WaitForFixedUpdate();
+
+                    _moveSpeed += Time.fixedDeltaTime;
+                    transform.position = Vector3.Lerp(startPos, endPos, _moveSpeed / MoveTime);
+                }
+            }
+
+            else
+                yield return new WaitForFixedUpdate();
+        }
+    }
+*/

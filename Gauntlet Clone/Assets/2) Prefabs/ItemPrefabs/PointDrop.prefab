@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7274720024890336443}
   - component: {fileID: 7274720024890336444}
   - component: {fileID: 7274720024890336445}
-  - component: {fileID: 7274720024890336441}
   m_Layer: 0
   m_Name: PointDrop
   m_TagString: PointDrop
@@ -96,16 +95,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7274720024890336441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274720024890336446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a44547919926d4794d7779ed947a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointsAmount: 500

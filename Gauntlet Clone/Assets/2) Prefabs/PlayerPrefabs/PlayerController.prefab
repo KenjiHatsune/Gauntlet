@@ -72,7 +72,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 00814242-dd19-4f4d-923b-c65dba41ab00
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow,/XInputControllerWindows/leftStick,/XInputControllerWindows/leftStick]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3297867526595092419}
@@ -88,7 +88,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 3a990801-9664-4797-a72d-9f8a951bfc80
-    m_ActionName: Player/UsePotion[/Keyboard/q]
+    m_ActionName: Player/UsePotion[/Keyboard/q,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonWest]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3297867526595092419}
@@ -104,7 +104,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 8025edc2-c3fa-4497-8733-8767e1316d23
-    m_ActionName: Player/UseAbility[/Keyboard/e]
+    m_ActionName: Player/UseAbility[/Keyboard/e,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonWest]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3297867526595092419}
@@ -120,7 +120,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 56cc75d7-77f0-4668-aa2e-2f2c8e5e26c6
-    m_ActionName: Player/Attack[/Keyboard/space,/Mouse/leftButton]
+    m_ActionName: Player/Attack[/XInputControllerWindows/buttonSouth,/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3297867526595092419}
@@ -136,7 +136,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 546ebfcd-1242-43bf-b4e3-e7503be49593
-    m_ActionName: Player/UseCredit[/Keyboard/enter]
+    m_ActionName: Player/UseCredit[/XInputControllerWindows/buttonNorth,/Keyboard/enter,/XInputControllerWindows/buttonNorth]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3297867526595092419}
@@ -153,6 +153,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ddcdd532-aaff-424e-a694-ddf8fbdcbbb0
     m_ActionName: Player/AddCredit[/Keyboard/backspace]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4926c875-7e13-409d-aa3a-2edb6e71107e
+    m_ActionName: Player/JoinGame[/Keyboard/alt,/XInputControllerWindows/select]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

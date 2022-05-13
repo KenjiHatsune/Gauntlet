@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Food_PickUp : Adventurer
+public class Food_PickUp : MonoBehaviour
 {
     public void FoodPick()
     {
-        Health += 100;
+        //Health += 100;
     }
     private void OnTriggerEnter(Collider other)
     {

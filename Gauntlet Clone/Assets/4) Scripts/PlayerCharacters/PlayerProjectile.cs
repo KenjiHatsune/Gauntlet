@@ -37,8 +37,14 @@ public class PlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player") && !other.CompareTag("Attack") && other.gameObject.layer != LayerMask.NameToLayer("PlayerSpecificWall"))
+        if (!other.CompareTag("Player") && !other.CompareTag("Attack"))
+        {
+            if (other.CompareTag("Enemy"))
+            {
+                other.GetComponent<BaseEnemy>().DamageEnemy(Damage, AttackElement);
+            }
             Destroy(this.gameObject);
+        }
     }
 
     private void DamageDrop()

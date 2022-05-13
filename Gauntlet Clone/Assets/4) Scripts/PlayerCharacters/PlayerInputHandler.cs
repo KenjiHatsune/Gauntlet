@@ -11,7 +11,12 @@ public class PlayerInputHandler : MonoBehaviour
     private Vector3 _playerSpawn;
 
     private int _characterControlled;
+    public int CharacterControlled
+    {
+        get { return _characterControlled; }
+    }
     private static int _charactersMade = 0;
+    private static bool _dualSpawnFix = false;
 
     [Header("PlayerControlledCharacters")]
     [SerializeField] private List<GameObject> _playerCharacters;
@@ -28,17 +33,36 @@ public class PlayerInputHandler : MonoBehaviour
         }
 
         ///Normal Operations\\\
-        //Starting up Player Controls
-        _UIS = new PlayerControls();
-        _UIS.Enable();
-
-        //Moving Player to below the camera.
-        _playerSpawn = Camera.main.transform.position;
-        _playerSpawn.y = 0.5f;
 
         //Setting Player Controlled Number and recording the fact the player is made.
         _characterControlled = _charactersMade;
         _charactersMade++;
+
+        //Moving Player to below the camera.
+        _playerSpawn = Camera.main.transform.position;
+        switch (_characterControlled)
+        {
+            case 0:
+                break;
+            case 1:
+                _playerSpawn.x += 1f;
+                _playerSpawn.z += 1f;
+                break;
+            case 2:
+                _playerSpawn.x += 1f;
+                _playerSpawn.z -= 1f;
+                break;
+            case 3:
+                _playerSpawn.x -= 1f;
+                _playerSpawn.z -= 1f;
+                break;
+            default:
+                break;
+        }
+        _playerSpawn.y = 0.6f;
+
+        //Naming this object.
+        this.gameObject.name = "PlayerController_" + _characterControlled.ToString();
     }
 
     public void NewPlayer()
@@ -68,13 +92,13 @@ public class PlayerInputHandler : MonoBehaviour
         if (!context.started)
             return;
 
-        if (UIManager.instance.Credits >= 1)
+        if (!_dualSpawnFix) _dualSpawnFix = true;
+
+        else if (UIManager.instance.Credits >= 1)
         {
             //Consuming Credit
             UIManager.instance.Credits--;
             UIManager.instance.UpdateCredits();
-
-            Debug.Log(context);
 
             //If Player is alive, increasing HP.
             if (_character != null)
@@ -90,13 +114,14 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (context.performed)
-            _adventurer.Move(context.ReadValue<Vector2>());
+        if (_adventurer == null) return;
+
+        _adventurer.Move(context.ReadValue<Vector2>());
     }
 
     public void Attack(InputAction.CallbackContext context)
     {
-        if (!context.performed || !_adventurer.AttackReady) return;
+        if (!context.performed || _adventurer == null || !_adventurer.AttackReady) return;
         
         //Attacking if Action is Performed.
         _adventurer.Attack();
@@ -104,7 +129,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void UseSkill(InputAction.CallbackContext context)
     {
-        if (!context.performed || !_adventurer.SkillReady) return;
+        if (!context.performed || _adventurer == null || !_adventurer.SkillReady) return;
 
         //Attacking if Action is Performed.
         _adventurer.UseSkill();
@@ -112,7 +137,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void UsePotion(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
+        if (!context.performed || _adventurer == null) return;
 
         //Attacking if Action is Performed.
         _adventurer.UsePotion();

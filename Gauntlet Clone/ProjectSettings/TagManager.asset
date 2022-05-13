@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Attack
-  - Grunt
-  - Lobber
   - PointDrop
   - Door
   - UIManager
+  - Key
+  - Potion
+  - Enemy
+  - Food
+  - Treasure
+  - SmolTreasure
   layers:
   - Default
   - TransparentFX

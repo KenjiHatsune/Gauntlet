@@ -123,14 +123,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Armor: 0
-  MoveTime: 0.25
+  _moveSpeed: 4.25
+  Agent: {fileID: 0}
   AttackPrefab: {fileID: 8905763872221861667, guid: e2cb3201617b1964fb828b04c094bad7, type: 3}
   AttackElement: 1
   AttackDamage: 1
   ProjectileSpeed: 10
   AttackDelay: 1
   ProjectileLifeSpan: 5
+  AttackReady: 1
   SkillDelay: 5
+  SkillReady: 1
   _wallLayer:
     serializedVersion: 2
     m_Bits: 192

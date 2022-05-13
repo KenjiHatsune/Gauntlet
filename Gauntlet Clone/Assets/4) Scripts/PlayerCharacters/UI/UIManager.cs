@@ -11,6 +11,7 @@ public class UIManager : Singleton<UIManager>
     public GameObject[] PlayerStatus = new GameObject[4];
     public GameObject[] PlayerCredit = new GameObject[4];
     public Adventurer[] Adventurers = new Adventurer[4];
+    public int[] Scores = new int[4];
     public PlayerData[] PlayerData = new PlayerData[4];
     public TMP_Text CreditCount;
 
@@ -66,7 +67,6 @@ public class UIManager : Singleton<UIManager>
 
     public void UpdatePlayerData(int PlayerNumber)
     {
-        Debug.Log(PlayerNumber);
         //Ensuring player data isn't updated.
         if (Adventurers[PlayerNumber] == null) return;
 
