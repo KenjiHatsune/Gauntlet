@@ -47,9 +47,6 @@ public class Adventurer : MonoBehaviour
     protected bool visible = true;
     protected bool vulnerable = true;
 
-    [Header("LinkedComponents")]
-    public PlayerInputHandler Agent;
-
     [Header("Inventory")]
     protected int _keys = 0;
     public int Keys
@@ -149,6 +146,27 @@ public class Adventurer : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        switch (_characterClass)
+        {
+            case CharacterClass.Warrior:
+                if (WarriorInputHandler.instance.Character != this.gameObject) Destroy(this.gameObject);
+                break;
+            case CharacterClass.Wizard:
+                if (WizardInputHandler.instance.Character != this.gameObject) Destroy(this.gameObject);
+                break;
+            case CharacterClass.Valkyrie:
+                if (ValkyrieInputHandler.instance.Character != this.gameObject) Destroy(this.gameObject);
+                break;
+            case CharacterClass.ElvenOne:
+                if (VulkanInputHandler.instance.Character != this.gameObject) Destroy(this.gameObject);
+                break;
+            default:
+                break;
+        }
+    }
+
     private void FixedUpdate()
     {
         //Adjusting Player Speed
@@ -205,6 +223,7 @@ public class Adventurer : MonoBehaviour
         GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
         projectile.GetComponent<Rigidbody>().velocity = (transform.forward * ProjectileSpeed);
 
+        projectile.GetComponent<PlayerProjectile>().Damage = AttackDamage;
         projectile.GetComponent<PlayerProjectile>().DamageDropOff = DamageDropOff;
         projectile.GetComponent<PlayerProjectile>().DamageDropOffAmount = DamageDropOffAmount;
         projectile.GetComponent<PlayerProjectile>().LifeSpan = ProjectileLifeSpan;
@@ -231,7 +250,7 @@ public class Adventurer : MonoBehaviour
         }
 
         //Updating UI HP Readout
-        Agent.OrderUIUpdate();
+        UpdateUI();
     }
 
     protected void OnCollisionEnter(Collision collision)
@@ -242,7 +261,6 @@ public class Adventurer : MonoBehaviour
             Destroy(collision.gameObject);
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
         }
     }
 
@@ -253,7 +271,7 @@ public class Adventurer : MonoBehaviour
             MagicPotions++;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
 
             //Destroying Item
             Destroy(other.gameObject);
@@ -264,7 +282,7 @@ public class Adventurer : MonoBehaviour
             Keys++;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
 
             //Destroying Item
             Destroy(other.gameObject);
@@ -275,7 +293,7 @@ public class Adventurer : MonoBehaviour
             Health += 400;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
 
             //Destroying Item
             Destroy(other.gameObject);
@@ -286,7 +304,7 @@ public class Adventurer : MonoBehaviour
             Score += 1500;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
 
             //Destroying Item
             Destroy(other.gameObject);
@@ -297,7 +315,7 @@ public class Adventurer : MonoBehaviour
             Score += 500;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
 
             //Destroying Item
             Destroy(other.gameObject);
@@ -313,7 +331,49 @@ public class Adventurer : MonoBehaviour
                 Health -= damageTaken;
 
             //Updating UI HP Readout
-            Agent.OrderUIUpdate();
+            UpdateUI();
+        }
+    }
+
+    public void UpdateUI()
+    {
+        switch (_characterClass)
+        {
+            case CharacterClass.Warrior:
+                WarriorInputHandler.instance.OrderUIUpdate();
+                break;
+            case CharacterClass.Wizard:
+                WizardInputHandler.instance.OrderUIUpdate();
+                break;
+            case CharacterClass.Valkyrie:
+                ValkyrieInputHandler.instance.OrderUIUpdate();
+                break;
+            case CharacterClass.ElvenOne:
+                VulkanInputHandler.instance.OrderUIUpdate();
+                break;
+            default:
+                break;
+        }
+    }
+
+    protected void KillPlayer()
+    {
+        switch (_characterClass)
+        {
+            case CharacterClass.Warrior:
+                WarriorInputHandler.instance.KillPlayer();
+                break;
+            case CharacterClass.Wizard:
+                WizardInputHandler.instance.KillPlayer();
+                break;
+            case CharacterClass.Valkyrie:
+                ValkyrieInputHandler.instance.KillPlayer();
+                break;
+            case CharacterClass.ElvenOne:
+                VulkanInputHandler.instance.KillPlayer();
+                break;
+            default:
+                break;
         }
     }
 
@@ -378,6 +438,7 @@ public class Adventurer : MonoBehaviour
                         break;
                 }
 
+                projectile.GetComponent<PlayerProjectile>().Damage = AttackDamage;
                 projectile.GetComponent<PlayerProjectile>().DamageDropOff = DamageDropOff;
                 projectile.GetComponent<PlayerProjectile>().DamageDropOffAmount = DamageDropOffAmount;
                 projectile.GetComponent<PlayerProjectile>().LifeSpan = ProjectileLifeSpan;
@@ -472,12 +533,12 @@ public class Adventurer : MonoBehaviour
             {
                 yield return new WaitForSeconds(1f);
                 Health--;
-                Agent.OrderUIUpdate();
+                UpdateUI();
             }
 
             if (Health < 0)
             {
-                Agent.KillPlayer();
+                KillPlayer();
             }
 
             yield return new WaitForSeconds(0.25f);

@@ -122,14 +122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355a2113a52812b46ad70e5a7ee6b1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
+  Armor: 5
   _moveSpeed: 4.25
-  Agent: {fileID: 0}
   AttackPrefab: {fileID: 8905763872221861667, guid: e2cb3201617b1964fb828b04c094bad7, type: 3}
   AttackElement: 0
-  AttackDamage: 2
-  ProjectileSpeed: 10
-  AttackDelay: 0.28
+  AttackDamage: 3
+  ProjectileSpeed: 15
+  AttackDelay: 0.21
   ProjectileLifeSpan: 5
   AttackReady: 1
   SkillDelay: 10

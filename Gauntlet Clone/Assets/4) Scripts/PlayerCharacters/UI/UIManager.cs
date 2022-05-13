@@ -43,19 +43,12 @@ public class UIManager : Singleton<UIManager>
         UpdateCredits();
     }
 
-    public void AddPlayer(Adventurer NewAdventurer)
+    public void AddPlayer(Adventurer NewAdventurer, int plyrNum)
     {
-        for (int i = 0; i < 4; i++)
-        {
-            if (Adventurers[i] == null)
-            {
-                Adventurers[i] = NewAdventurer;
-                PlayerStatus[i].SetActive(true);
-                PlayerCredit[i].SetActive(false);
-                UpdatePlayerData(i);
-                i = 99;
-            }
-        }
+        Adventurers[plyrNum] = NewAdventurer;
+        PlayerStatus[plyrNum].SetActive(true);
+        PlayerCredit[plyrNum].SetActive(false);
+        UpdatePlayerData(plyrNum);
     }
 
     public void RemovePlayer(int Neku)

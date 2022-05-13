@@ -21,13 +21,13 @@ public class LobberGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Lobber, spawn.transform.position, spawn.transform.rotation, transform);
+        Instantiate(Lobber, spawn.transform.position, spawn.transform.rotation, transform.parent);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Attack")
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }

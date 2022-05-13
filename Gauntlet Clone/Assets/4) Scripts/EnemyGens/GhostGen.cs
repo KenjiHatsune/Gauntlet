@@ -18,11 +18,11 @@ public class GhostGen : MonoBehaviour
     {
         if (other.gameObject.tag == "Attack")
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
     public void Spawn()
     {
-        Instantiate(Ghost, transform.position, transform.rotation, transform);
+        Instantiate(Ghost, transform.position, transform.rotation, transform.parent);
     }
 }

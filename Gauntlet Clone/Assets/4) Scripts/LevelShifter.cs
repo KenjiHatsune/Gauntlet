@@ -11,6 +11,12 @@ public class LevelShifter : MonoBehaviour
     }
     public void ReplayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+            SwitchScene();
     }
 }

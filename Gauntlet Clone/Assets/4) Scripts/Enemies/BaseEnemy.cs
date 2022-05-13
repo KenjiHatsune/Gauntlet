@@ -27,7 +27,6 @@ public class BaseEnemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         rb = gameObject.GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     // Update is called once per frame
@@ -44,7 +43,6 @@ public class BaseEnemy : MonoBehaviour
     {
         transform.LookAt(player.transform.position);
         movement = transform.forward * speed;
-        Debug.Log(movement);
         rb.velocity = movement;
     }
 

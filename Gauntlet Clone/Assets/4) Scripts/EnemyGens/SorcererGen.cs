@@ -23,11 +23,13 @@ public class SorcererGen : MonoBehaviour
     {
         if (other.gameObject.tag == "Attack")
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
     public void Spawn()
     {
-        Instantiate(Sorcerer, transform.position, transform.rotation, transform);
+        //Only spawning Sorcerers if the spawner is visible.
+        if (GetComponent<Renderer>().isVisible)
+            Instantiate(Sorcerer, transform.position, transform.rotation, transform.parent);
     }
 }

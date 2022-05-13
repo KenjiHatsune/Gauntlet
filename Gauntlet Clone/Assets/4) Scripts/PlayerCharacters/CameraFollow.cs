@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraFollow : Singleton<CameraFollow>
 {
-    private float[] _playerPos_x;
-    private float[] _playerPos_z;
+    private float[] _playerPos_x = new float[4];
+    private float[] _playerPos_z = new float[4];
     public float CameraHeight = 30f;
     private Vector3 _shadowPos;
-    [SerializeField] private GameObject[] _stalkedTargets;
+    [SerializeField] private GameObject[] _stalkedTargets = new GameObject[4];
     [SerializeField] private float _xRgtBound, _xLftBound, _zTopBound, _zBotBound;
     public float RgtBound
     {
@@ -33,18 +33,14 @@ public class CameraFollow : Singleton<CameraFollow>
 
     private void Start()
     {
-        RefreshPlayerList();
-
         FindBoundaries();
 
         Application.targetFrameRate = 60;
     }
 
-    public void RefreshPlayerList()
+    public void AddPlayer(GameObject newStalkedTarget, int PlyrNum)
     {
-        _stalkedTargets = GameObject.FindGameObjectsWithTag("Player");
-        _playerPos_x = new float[_stalkedTargets.Length];
-        _playerPos_z = new float[_stalkedTargets.Length];
+        _stalkedTargets[PlyrNum] = newStalkedTarget;
     }
 
     private void FixedUpdate()
@@ -53,6 +49,9 @@ public class CameraFollow : Singleton<CameraFollow>
 
         //Calibrating Camera Position
         _shadowPos.y += CameraHeight;
+
+        //If the camera is really close to it's current position, do nothing.
+        if (Vector3.Distance(_shadowPos, transform.position) <= 0.05f) return;
 
         //Adjusting Camera Position
         transform.position = Vector3.Lerp(transform.position, _shadowPos, 0.25f);
@@ -73,8 +72,16 @@ public class CameraFollow : Singleton<CameraFollow>
         //Getting the x and z positions of all players.
         for (int index = 0; index < _stalkedTargets.Length; index++)
         {
-            _playerPos_x[index] = _stalkedTargets[index].transform.position.x;
-            _playerPos_z[index] = _stalkedTargets[index].transform.position.z;
+            if (_stalkedTargets[index] != null)
+            {
+                _playerPos_x[index] = _stalkedTargets[index].transform.position.x;
+                _playerPos_z[index] = _stalkedTargets[index].transform.position.z;
+            }
+            else
+            {
+                _playerPos_x[index] = transform.position.x;
+                _playerPos_z[index] = transform.position.z;
+            }
         }
 
         //Calculating the Min-Max positions of the player's positions to find the center.

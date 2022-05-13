@@ -23,12 +23,12 @@ public class DemonGen : MonoBehaviour
     {
         if (other.gameObject.tag == "Attack")
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
       
     }
     public void Spawn()
     {
-        Instantiate(Demon, transform.position, transform.rotation, transform);
+        Instantiate(Demon, transform.position, transform.rotation, transform.parent);
     }
 }

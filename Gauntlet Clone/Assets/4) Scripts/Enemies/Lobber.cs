@@ -17,7 +17,6 @@ public class Lobber : MonoBehaviour
 
     public void Throw()
     {
-        Debug.Log("Shooting");
         GameObject shoot = Instantiate(projectile, transform.position, transform.rotation);
         shoot.GetComponent<LobberProjectile>().damage = damage;
         shoot.GetComponent<Rigidbody>().AddForce((transform.forward + transform.up * 5) * Random.Range(minThrowPower, maxThrowPower), ForceMode.Impulse);

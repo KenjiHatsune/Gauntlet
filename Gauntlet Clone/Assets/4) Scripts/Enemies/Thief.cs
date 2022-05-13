@@ -14,7 +14,7 @@ public class Thief : MonoBehaviour
         {
             other.GetComponent<Adventurer>().TakeDamage(damage);
             other.GetComponent<Adventurer>().Score -= scoreDamage;
-            UIManager.instance.UpdatePlayerData(other.GetComponent<Adventurer>().Agent.CharacterControlled);
+            other.GetComponent<Adventurer>().UpdateUI();
             transform.position = transform.position - (transform.forward * 2.5f);
         }
     }

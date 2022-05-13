@@ -23,12 +23,12 @@ public class ThiefGen : MonoBehaviour
     {
         if (other.gameObject.tag == "Attack")
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
 
     }
     public void Spawn()
     {
-        Instantiate(Thief, transform.position, transform.rotation, transform);
+        Instantiate(Thief, transform.position, transform.rotation, transform.parent);
     }
 }
