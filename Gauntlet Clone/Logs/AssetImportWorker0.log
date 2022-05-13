@@ -15,11 +15,11 @@ C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60418
+56250
 Successfully changed project path to: C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 C:/Users/porky/Documents/GitHub/Gauntlet/Gauntlet Clone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 48.76 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -36,134 +36,134 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001926 seconds.
+Registered in 0.001942 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.18 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.436 seconds
+- Completed reload, in  2.023 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2437ms)
-		BeginReloadAssembly (49ms)
+	ReloadAssembly (2023ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (654ms)
-			LoadAssemblies (46ms)
+		EndReloadAssembly (375ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (406ms)
+			SetupTypeCache (129ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
+			RebuildScriptCaches (25ms)
 			SetupLoadedEditorAssemblies (159ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
+				RefreshPlugins (48ms)
 				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (67ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.258396 seconds.
+Registered in 0.004510 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000012946A8B210 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-00000242F93E0020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942E21960 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file data-00000242F80FE750 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942FA5040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file data-00000242F8AC4C00 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942F18630 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-00000242F8AC4C00 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012946E399C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-00000242F40D79E0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942C40B30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
+Symbol file data-00000242F375A020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942FBFC50 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-00000242F8643230 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942FBFC50 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-00000242F3690A10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942926470 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000242F8660020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942926470 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-00000242F868F830 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129467A3C20 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file data-00000242F38D9430 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129427C2230 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file data-00000242F9578E90 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942936490 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file data-00000242F8883020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012946E399C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-00000242F40D79E0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001294765D010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file data-00000242F8006030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.InputSystem.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012947C71040 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-00000242F3C05220 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942E22310 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file data-00000242F80FE750 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129429F5280 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-00000242F8897A30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129429AA730 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-00000242F8897A30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942F4F010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-00000242F3FA4020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001294765D010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file data-00000242F8A4E010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129429F5280 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file data-00000242F8897A30 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001294269B3C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll
+Symbol file data-00000242F97E36F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942E22310 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file data-00000242F80FEF10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012946E52020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-00000242F8369010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000012942E21960 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file data-00000242F80FFCA0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129429D0940 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-00000242F3690A10 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129423DE4B0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-00000242F964AA20 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129429F5280 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file data-00000242F8369010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000129467A3C20 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file data-00000242F7FD9550 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.24 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.431 seconds
+- Completed reload, in  1.257 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1435ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (1258ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (1252ms)
+		EndReloadAssembly (1077ms)
 			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (749ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (572ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (599ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (428ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -171,15 +171,15 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3050 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 136.1 MB.
 System memory in use after: 136.3 MB.
 
 Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3485.
-Total: 3.638300 ms (FindLiveObjects: 0.320200 ms CreateObjectMapping: 0.145600 ms MarkObjects: 3.113300 ms  DeleteObjects: 0.058300 ms)
+Total: 3.458800 ms (FindLiveObjects: 0.277600 ms CreateObjectMapping: 0.135900 ms MarkObjects: 2.980800 ms  DeleteObjects: 0.063900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -193,78 +193,693 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/2) Prefabs/PlayerPrefabs/WarriorOfLight.prefab
-  artifactKey: Guid(a229b4a5e1a2a8d48aec68c0e8a210b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/WarriorOfLight.prefab using Guid(a229b4a5e1a2a8d48aec68c0e8a210b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '608d1d154d5e4b12b519e3752cf2a27c') in 0.202606 seconds 
-  Import took 0.206697 seconds .
+  path: Assets/1) Scenes/0) TitleScreen.unity
+  artifactKey: Guid(670219b54a2aa6a4b853722570a4bd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1) Scenes/0) TitleScreen.unity using Guid(670219b54a2aa6a4b853722570a4bd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3e5e8902389734b0fb0fcd2f78be67') in 0.015182 seconds 
+  Import took 0.019007 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/ElfOfLight.prefab
-  artifactKey: Guid(bec812f587d8f774db24144f2f7b87af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/ElfOfLight.prefab using Guid(bec812f587d8f774db24144f2f7b87af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f32cadbd3e75bedf546c5a6d2e71b78') in 0.013491 seconds 
-  Import took 0.017930 seconds .
+  Time since last request: 0.000255 seconds.
+  path: Assets/1) Scenes/1) Level1.unity
+  artifactKey: Guid(cc9dd69792f330742867b69c5e87eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1) Scenes/1) Level1.unity using Guid(cc9dd69792f330742867b69c5e87eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43510725a7477af55336be4e1d9db3a') in 0.005926 seconds 
+  Import took 0.010181 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/WizardOfLight.prefab
-  artifactKey: Guid(6979324f43e2dc943b75de7d720320b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/WizardOfLight.prefab using Guid(6979324f43e2dc943b75de7d720320b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52505a6cf9e5e00809fd309cf9deb2e1') in 0.011621 seconds 
-  Import took 0.015671 seconds .
+  Time since last request: 8.266216 seconds.
+  path: Assets/1) Scenes/2) VictoryScreen.unity
+  artifactKey: Guid(346f15eb2d8505f41a60d8c46b520939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1) Scenes/2) VictoryScreen.unity using Guid(346f15eb2d8505f41a60d8c46b520939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a8185025a1e5cc405e532895029c21d') in 0.006042 seconds 
+  Import took 0.012238 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/PlayerUI.prefab
-  artifactKey: Guid(5581c82196aada94cbbdf896fe48a528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/PlayerUI.prefab using Guid(5581c82196aada94cbbdf896fe48a528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62c8789ca9398171fddfae346d498c4') in 0.081448 seconds 
-  Import took 0.085991 seconds .
+  Time since last request: 10.015649 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/Food.prefab
+  artifactKey: Guid(2c7b89e00870318459846fed6dd410a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/Food.prefab using Guid(2c7b89e00870318459846fed6dd410a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78b232732c966e9e4910f471d0073ef') in 0.177137 seconds 
+  Import took 0.182043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/PlayerPackage.prefab
-  artifactKey: Guid(22a42199286900b4eac531e9d8b72034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/PlayerPackage.prefab using Guid(22a42199286900b4eac531e9d8b72034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd85a93ab9a2ed19c27e901660fb178f') in 0.054597 seconds 
-  Import took 0.058845 seconds .
+  Time since last request: 0.000266 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/Key.prefab
+  artifactKey: Guid(14a25b5ecf3019740a84b001cfb09a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/Key.prefab using Guid(14a25b5ecf3019740a84b001cfb09a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45673e73a3b6e0cc754d2ffd75746fcd') in 0.018441 seconds 
+  Import took 0.022304 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/AdventurerOfLight.prefab
-  artifactKey: Guid(e651f776cbfa36c4780cea7a4f354284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/AdventurerOfLight.prefab using Guid(e651f776cbfa36c4780cea7a4f354284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2015b4f9af681a22a21a2fb39831e414') in 0.015891 seconds 
-  Import took 0.019622 seconds .
+  Time since last request: 0.000318 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/Potion.prefab
+  artifactKey: Guid(849a5cbea44f440419f0e77a73ff5613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/Potion.prefab using Guid(849a5cbea44f440419f0e77a73ff5613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a793d4cfa52bce2236c1a70bd7c551a9') in 0.063704 seconds 
+  Import took 0.069130 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/PlayerController.prefab
-  artifactKey: Guid(61f73c71781b2c54cb1e2d4eaa37a120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/PlayerController.prefab using Guid(61f73c71781b2c54cb1e2d4eaa37a120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59b537aa579e0bc75853176f07bd089') in 0.009252 seconds 
-  Import took 0.013141 seconds .
+  Time since last request: 0.000270 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/PointDrop.prefab
+  artifactKey: Guid(3fe9ca89117a46c48a171d3b84c10a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/PointDrop.prefab using Guid(3fe9ca89117a46c48a171d3b84c10a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a696afd4c0d31a95d0c21edbe55c420') in 0.067082 seconds 
+  Import took 0.071369 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/2) Prefabs/PlayerPrefabs/ValkyrieOfLight.prefab
-  artifactKey: Guid(f95171be455afd84281de14e117f1351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2) Prefabs/PlayerPrefabs/ValkyrieOfLight.prefab using Guid(f95171be455afd84281de14e117f1351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0538bbfdcf0e464835f802dfe654c0db') in 0.012569 seconds 
-  Import took 0.016439 seconds .
+  Time since last request: 0.000321 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/SmallTreasure.prefab
+  artifactKey: Guid(ba7c0285e884b9249bbdc0c4d2041b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/SmallTreasure.prefab using Guid(ba7c0285e884b9249bbdc0c4d2041b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e128cea26fc1a09bc1fded5803d850f1') in 0.037512 seconds 
+  Import took 0.041667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/Treasure.prefab
+  artifactKey: Guid(aa862f4f80d9a724ba044367fbfabf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/Treasure.prefab using Guid(aa862f4f80d9a724ba044367fbfabf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ba131710ee1e8d9b01e33018f851de') in 0.042513 seconds 
+  Import took 0.047207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/2) Prefabs/ItemPrefabs/SmallTreasure.prefab
+  artifactKey: Guid(ba7c0285e884b9249bbdc0c4d2041b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/ItemPrefabs/SmallTreasure.prefab using Guid(ba7c0285e884b9249bbdc0c4d2041b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e128cea26fc1a09bc1fded5803d850f1') in 0.034007 seconds 
+  Import took 0.038554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.611379 seconds.
+  path: Assets/2) Prefabs/EnemyGens/DemonGen.prefab
+  artifactKey: Guid(63c4e49bdd83f054da1967dca710c170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/DemonGen.prefab using Guid(63c4e49bdd83f054da1967dca710c170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4adc26d6fc794b1657413445612cb262') in 0.013794 seconds 
+  Import took 0.018416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/2) Prefabs/EnemyGens/GruntGen.prefab
+  artifactKey: Guid(3a1a40f58e1cf0b4f8c26c4ff2b8bf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/GruntGen.prefab using Guid(3a1a40f58e1cf0b4f8c26c4ff2b8bf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c26712ad1de780690a9273f03b9cd533') in 0.013471 seconds 
+  Import took 0.018399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/2) Prefabs/EnemyGens/ThiefGen.prefab
+  artifactKey: Guid(86b297a781037ac4aa4e313c7c303849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/ThiefGen.prefab using Guid(86b297a781037ac4aa4e313c7c303849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14342ff0d84ae02d380e1e82a657c77') in 0.017888 seconds 
+  Import took 0.022336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/2) Prefabs/EnemyGens/LobberGen.prefab
+  artifactKey: Guid(c72a15050d3bfcc47bb0b9c2f4bb9231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/LobberGen.prefab using Guid(c72a15050d3bfcc47bb0b9c2f4bb9231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5eba976ff19b9881d45f8af2fbf6cb') in 0.015074 seconds 
+  Import took 0.020272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/2) Prefabs/EnemyGens/SorcererGen.prefab
+  artifactKey: Guid(b365ca61bb1c0cf47902325ce7c93485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/SorcererGen.prefab using Guid(b365ca61bb1c0cf47902325ce7c93485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf273293b49269bc4510da2ff830f98') in 0.014274 seconds 
+  Import took 0.018624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/2) Prefabs/EnemyGens/GhostGen.prefab
+  artifactKey: Guid(56e45c1f84eec6a48b7638d318e718ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/EnemyGens/GhostGen.prefab using Guid(56e45c1f84eec6a48b7638d318e718ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f4d8b55851bb8c1c74bfb98ef4b708') in 0.019356 seconds 
+  Import took 0.023776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.917490 seconds.
+  path: Assets/2) Prefabs/Enemies/Death.prefab
+  artifactKey: Guid(78359597879210b41b7cefa7a41636b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Death.prefab using Guid(78359597879210b41b7cefa7a41636b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5256df55c81cb79c4028ccbf356be1f') in 0.019168 seconds 
+  Import took 0.023325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/2) Prefabs/Enemies/Grunt.prefab
+  artifactKey: Guid(af828e5aaf7f8704ca955738c486fcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Grunt.prefab using Guid(af828e5aaf7f8704ca955738c486fcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '784bc6ee5bb0c9a22bed65ca4b77719c') in 0.012694 seconds 
+  Import took 0.017067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/2) Prefabs/Enemies/Lobber.prefab
+  artifactKey: Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Lobber.prefab using Guid(a4811cb7ae0ebf848ac26ac711704814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832e861010205156b671285176d9e31e') in 0.019376 seconds 
+  Import took 0.024486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/2) Prefabs/Enemies/Thief.prefab
+  artifactKey: Guid(560feaf370b07634c8d5732ce4ebc259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Thief.prefab using Guid(560feaf370b07634c8d5732ce4ebc259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74289a39dbabe7d90ae20edc22484f8') in 0.016534 seconds 
+  Import took 0.020777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/2) Prefabs/Enemies/Demon.prefab
+  artifactKey: Guid(a282ec05cdb62c84892202764ce1d1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Demon.prefab using Guid(a282ec05cdb62c84892202764ce1d1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2047f19dfabfb2c4c576510220226d04') in 0.019034 seconds 
+  Import took 0.024476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/2) Prefabs/Enemies/Sorcerer.prefab
+  artifactKey: Guid(92fa9a2a48e27324d99583bbd89bf15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Sorcerer.prefab using Guid(92fa9a2a48e27324d99583bbd89bf15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f57573db7ba59a80466e767c3c030f6') in 0.019182 seconds 
+  Import took 0.023615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/2) Prefabs/Enemies/Ghost.prefab
+  artifactKey: Guid(02d655176d0893747a58d471add380bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Enemies/Ghost.prefab using Guid(02d655176d0893747a58d471add380bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3525bef1fb9c2a61c997453696ebd0') in 0.018821 seconds 
+  Import took 0.023074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.905451 seconds.
+  path: Assets/4) Scripts/Enemies
+  artifactKey: Guid(cbbbe70bbdd65024bbe16b532650f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Enemies using Guid(cbbbe70bbdd65024bbe16b532650f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053f3b4202bf6d90fb888e0fa5a651eb') in 0.007252 seconds 
+  Import took 0.012597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000983 seconds.
+  path: Assets/4) Scripts/Enemies
+  artifactKey: Guid(cbbbe70bbdd65024bbe16b532650f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Enemies using Guid(cbbbe70bbdd65024bbe16b532650f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053f3b4202bf6d90fb888e0fa5a651eb') in 0.001909 seconds 
+  Import took 0.006158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.205302 seconds.
+  path: Assets/4) Scripts/Enemies/BaseEnemy.cs
+  artifactKey: Guid(4788add4648348e409ced55fb9eb444c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Enemies/BaseEnemy.cs using Guid(4788add4648348e409ced55fb9eb444c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd480d317182ea5159cd304c3c56ebf08') in 0.014977 seconds 
+  Import took 0.019213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.845703 seconds.
+  path: Assets/3) Materials/DoorMaterial.mat
+  artifactKey: Guid(bfe19f37688d9e94291628e1d01c0071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3) Materials/DoorMaterial.mat using Guid(bfe19f37688d9e94291628e1d01c0071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2a4446099b2b288fa39dd39b3eb917') in 0.034991 seconds 
+  Import took 0.039503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/3) Materials/Purple.mat
+  artifactKey: Guid(59ff01c1ee494694fb6ee4473a6ed2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3) Materials/Purple.mat using Guid(59ff01c1ee494694fb6ee4473a6ed2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5ea3f0d9659487bd073da64f26f5f6') in 0.015314 seconds 
+  Import took 0.019157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.049852 seconds.
+  path: Assets/2) Prefabs/Projectiles/ATTACK OF DOOM AND DESTRUCTION.prefab
+  artifactKey: Guid(e2cb3201617b1964fb828b04c094bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Projectiles/ATTACK OF DOOM AND DESTRUCTION.prefab using Guid(e2cb3201617b1964fb828b04c094bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7b59d46f20382b73a9659a0b61769b') in 0.017178 seconds 
+  Import took 0.021409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/2) Prefabs/Projectiles/projectile_demon.prefab
+  artifactKey: Guid(512c81bc808b4c44492ac0245216a602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Projectiles/projectile_demon.prefab using Guid(512c81bc808b4c44492ac0245216a602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808d49f6e69fcaea35c8cae1953be406') in 0.015789 seconds 
+  Import took 0.019752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/2) Prefabs/Projectiles/projectile_lobber.prefab
+  artifactKey: Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Projectiles/projectile_lobber.prefab using Guid(33bf5fdf9a9da4340a2e69720a92727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26bcf78d3d45fb79e23e4164443ed8b') in 0.013795 seconds 
+  Import took 0.018771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.664011 seconds.
+  path: Assets/2) Prefabs/Door.prefab
+  artifactKey: Guid(67a76d228832e2740a7f813e71cd048f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/Door.prefab using Guid(67a76d228832e2740a7f813e71cd048f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1245f83ef89d04c2a53438e5ae83ff44') in 0.016546 seconds 
+  Import took 0.020895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/2) Prefabs/LevelBoundaries_grp.prefab
+  artifactKey: Guid(5b08cb28d9942b644b7e910361ef738e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs/LevelBoundaries_grp.prefab using Guid(5b08cb28d9942b644b7e910361ef738e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c456505a9ab54fcb19231fbb8de1dbe') in 0.042935 seconds 
+  Import took 0.047612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.965539 seconds.
+  path: Assets/2) Prefabs 1/Door.prefab
+  artifactKey: Guid(ede09e14575b7b04b90e992e645a8ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Door.prefab using Guid(ede09e14575b7b04b90e992e645a8ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65736cd1ba5532574afa8664b25ff701') in 0.011323 seconds 
+  Import took 0.016025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/2) Prefabs 1/LevelBoundaries_grp.prefab
+  artifactKey: Guid(b7b431dd1ecbe2f4ea86a81fdcb6e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/LevelBoundaries_grp.prefab using Guid(b7b431dd1ecbe2f4ea86a81fdcb6e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2646e66b7a7520a28fa5a1446c0a813b') in 0.025676 seconds 
+  Import took 0.031550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/2) Prefabs 1/floor.prefab
+  artifactKey: Guid(d2d52c64454b89548bc255dd027d03b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/floor.prefab using Guid(d2d52c64454b89548bc255dd027d03b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787299aff7b6896696a6546006aacc8d') in 0.025026 seconds 
+  Import took 0.029526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.223505 seconds.
+  path: Assets/4) Scripts/LevelShifter.cs
+  artifactKey: Guid(a87077a5e181c544db845b31c63987fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/LevelShifter.cs using Guid(a87077a5e181c544db845b31c63987fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf27559a91e1b014e29471e6bcd3a15') in 0.005262 seconds 
+  Import took 0.010402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.403810 seconds.
+  path: Assets/4) Scripts/PointDrop.cs
+  artifactKey: Guid(47a44547919926d4794d7779ed947a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/PointDrop.cs using Guid(47a44547919926d4794d7779ed947a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f32747852912526f4c571a4ab03002e') in 0.004935 seconds 
+  Import took 0.009864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.687429 seconds.
+  path: Assets/4) Scripts/Real_Potion.cs
+  artifactKey: Guid(f6f6398eb3a931846a04eea6012c3138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Real_Potion.cs using Guid(f6f6398eb3a931846a04eea6012c3138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7758744c8df09b301ca36d55b2d31936') in 0.005687 seconds 
+  Import took 0.010216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.416618 seconds.
+  path: Assets/4) Scripts/Food_PickUp.cs
+  artifactKey: Guid(bda7b5ffdc22906468020e5c959aae28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Food_PickUp.cs using Guid(bda7b5ffdc22906468020e5c959aae28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b5eab60d2cc6e54aa1c9cce6c214a7') in 0.007894 seconds 
+  Import took 0.013164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001484 seconds.
+  path: Assets/4) Scripts/Food_PickUp.cs
+  artifactKey: Guid(bda7b5ffdc22906468020e5c959aae28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/Food_PickUp.cs using Guid(bda7b5ffdc22906468020e5c959aae28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b5eab60d2cc6e54aa1c9cce6c214a7') in 0.002723 seconds 
+  Import took 0.007543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.997227 seconds.
+  path: Assets/4) Scripts/PlayerCharacters/Adventurer.cs
+  artifactKey: Guid(355a2113a52812b46ad70e5a7ee6b1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4) Scripts/PlayerCharacters/Adventurer.cs using Guid(355a2113a52812b46ad70e5a7ee6b1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32cfba3507f2d536e1bd1c8a01b51240') in 0.005383 seconds 
+  Import took 0.011463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.100408 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs
+  artifactKey: Guid(865c91e122344ab4fbb28dcfa97143a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs using Guid(865c91e122344ab4fbb28dcfa97143a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a08b292da80be83f30546ab5533a96d') in 0.007594 seconds 
+  Import took 0.012696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.186599 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/Food.prefab
+  artifactKey: Guid(3e46604d012bce94ba461c1d89f31fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/Food.prefab using Guid(3e46604d012bce94ba461c1d89f31fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82338bddab13df6ea1327e9e4e19692') in 0.012184 seconds 
+  Import took 0.016701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/SmallTreasure.prefab
+  artifactKey: Guid(0c7fb520f162a354b98c5d3b6e54a405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/SmallTreasure.prefab using Guid(0c7fb520f162a354b98c5d3b6e54a405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c5ed519f0267b79368e90bd11e2f80') in 0.011151 seconds 
+  Import took 0.017148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/Key.prefab
+  artifactKey: Guid(240830601c78f094ebdcc0d1f107a317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/Key.prefab using Guid(240830601c78f094ebdcc0d1f107a317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e04259b814f107fdcd252d4e3967323') in 0.011253 seconds 
+  Import took 0.015751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/Potion.prefab
+  artifactKey: Guid(9aab0369f00aa854a9571a1f2c29d7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/Potion.prefab using Guid(9aab0369f00aa854a9571a1f2c29d7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768098a9aaf653d0e7a7ff5aec13f2b6') in 0.018119 seconds 
+  Import took 0.022974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/Treasure.prefab
+  artifactKey: Guid(b849701aea610574c8e4cb7906589ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/Treasure.prefab using Guid(b849701aea610574c8e4cb7906589ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04b0fc98fbb0e65dd9d784be282f27c') in 0.022827 seconds 
+  Import took 0.027527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/2) Prefabs 1/ItemPrefabs/PointDrop.prefab
+  artifactKey: Guid(bf6396c010d52d94283852ae814e4bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/ItemPrefabs/PointDrop.prefab using Guid(bf6396c010d52d94283852ae814e4bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77eb06b5df9e4811cb1eb54090f9876') in 0.017909 seconds 
+  Import took 0.022188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.604795 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Death.prefab
+  artifactKey: Guid(0906d2ad1e104a045830837cb73af824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Death.prefab using Guid(0906d2ad1e104a045830837cb73af824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b478e4fc36eceb1f8df9784615422d') in 0.009164 seconds 
+  Import took 0.013493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Thief.prefab
+  artifactKey: Guid(79d8e6ddbb85b3441bb50d12674617a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Thief.prefab using Guid(79d8e6ddbb85b3441bb50d12674617a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6a9d963ac7aecefab64679e8a7df00') in 0.010365 seconds 
+  Import took 0.016267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Sorcerer.prefab
+  artifactKey: Guid(6a036c1bf5e6f9e468de1553b878a731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Sorcerer.prefab using Guid(6a036c1bf5e6f9e468de1553b878a731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f891fafa48223f4d4468a41ba2c3172') in 0.018085 seconds 
+  Import took 0.022734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Lobber.prefab
+  artifactKey: Guid(05245c0688b74404289a56e08faa690e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Lobber.prefab using Guid(05245c0688b74404289a56e08faa690e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72505ea415a04455cd5cbb6898dab44e') in 0.014770 seconds 
+  Import took 0.019126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Demon.prefab
+  artifactKey: Guid(93de2d2f82599cb41947e7d7bf90f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Demon.prefab using Guid(93de2d2f82599cb41947e7d7bf90f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8a3ca0c4912bc4fb2ae0e6ec677e61') in 0.011174 seconds 
+  Import took 0.016083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Grunt.prefab
+  artifactKey: Guid(876419a6131de7e49b8a75ee16bbe0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Grunt.prefab using Guid(876419a6131de7e49b8a75ee16bbe0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e92d26ccf71177d324f163f6189b3ef') in 0.017481 seconds 
+  Import took 0.021940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2) Prefabs 1/Enemies/Ghost.prefab
+  artifactKey: Guid(908532c1a5a7f404eb3d62efd1222002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Enemies/Ghost.prefab using Guid(908532c1a5a7f404eb3d62efd1222002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efb47ae2934d651de8825f75ae9d570') in 0.010104 seconds 
+  Import took 0.015008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.570657 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/DemonGen.prefab
+  artifactKey: Guid(6d2af1938274ef94eb28829c6c861864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/DemonGen.prefab using Guid(6d2af1938274ef94eb28829c6c861864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1010f74b558c3facc8934f8077cc9445') in 0.008499 seconds 
+  Import took 0.013010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/GruntGen.prefab
+  artifactKey: Guid(8372fa8fb6b596b46877e2b5cbb6e07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/GruntGen.prefab using Guid(8372fa8fb6b596b46877e2b5cbb6e07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f01207ff68fb192e4684469a407d76') in 0.009956 seconds 
+  Import took 0.014274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/SorcererGen.prefab
+  artifactKey: Guid(c4b163d29d89a384a86aab1ba4cce7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/SorcererGen.prefab using Guid(c4b163d29d89a384a86aab1ba4cce7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5f9d3451d1d11987686b6d5905c005') in 0.011031 seconds 
+  Import took 0.017208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/LobberGen.prefab
+  artifactKey: Guid(7706bfe2d8d27c44dbedc4fe9405ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/LobberGen.prefab using Guid(7706bfe2d8d27c44dbedc4fe9405ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44bde2f8907009d4a417487adefcf6f') in 0.012908 seconds 
+  Import took 0.017709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/ThiefGen.prefab
+  artifactKey: Guid(4d7ad6e88ea4f474d8e98452d22c068a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/ThiefGen.prefab using Guid(4d7ad6e88ea4f474d8e98452d22c068a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29871b1d5c311427a65851b2eb93b146') in 0.011917 seconds 
+  Import took 0.016259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/2) Prefabs 1/EnemyGens/GhostGen.prefab
+  artifactKey: Guid(f3564cd5f9a9eaf4dbe125aea52751d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/EnemyGens/GhostGen.prefab using Guid(f3564cd5f9a9eaf4dbe125aea52751d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd805ceb197ed7419e46ab7251b63a1c0') in 0.015931 seconds 
+  Import took 0.020924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.488990 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/AdventurerOfLight.prefab
+  artifactKey: Guid(6729024f80df31e4ab9946432279c1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/AdventurerOfLight.prefab using Guid(6729024f80df31e4ab9946432279c1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd21b455a1bf6b1afdef1b32664a1b20f') in 0.027456 seconds 
+  Import took 0.031877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/PlayerPackage.prefab
+  artifactKey: Guid(7440b5c5d243a27498f7c4e4091a8849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/PlayerPackage.prefab using Guid(7440b5c5d243a27498f7c4e4091a8849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb555a0e3f2d03b6ea1db385b77fadd8') in 0.066488 seconds 
+  Import took 0.072111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/ValkyrieOfLight.prefab
+  artifactKey: Guid(7b60e6212cae7c54aa95273682bcbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/ValkyrieOfLight.prefab using Guid(7b60e6212cae7c54aa95273682bcbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5abf015dae7019256d3e85b8eee07c1') in 0.016964 seconds 
+  Import took 0.021864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/WizardOfLight.prefab
+  artifactKey: Guid(c669b44a8e0788c498379306d7e91c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/WizardOfLight.prefab using Guid(c669b44a8e0788c498379306d7e91c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd86db89b200e48b00d3bdcf82b7cd24') in 0.012912 seconds 
+  Import took 0.018249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/PlayerUI.prefab
+  artifactKey: Guid(2aebd20fcfb177e468e2fe7875b050ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/PlayerUI.prefab using Guid(2aebd20fcfb177e468e2fe7875b050ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bbe55accd475739df3bc50778e4d9f') in 0.029379 seconds 
+  Import took 0.035238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/PlayerController.prefab
+  artifactKey: Guid(abe0fa9dc4eaa2f45a852956242a7d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/PlayerController.prefab using Guid(abe0fa9dc4eaa2f45a852956242a7d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17221bffc8449c1920ba3b1521d06093') in 0.008801 seconds 
+  Import took 0.013508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/ElfOfLight.prefab
+  artifactKey: Guid(224b400409328ad4ab3ccd02ce7ea5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/ElfOfLight.prefab using Guid(224b400409328ad4ab3ccd02ce7ea5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5e8b1a7e5a7aca1a7bccf5b0014afe') in 0.015644 seconds 
+  Import took 0.020568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2) Prefabs 1/PlayerPrefabs/WarriorOfLight.prefab
+  artifactKey: Guid(51789f9ebdb4f34469fce163c516871e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/PlayerPrefabs/WarriorOfLight.prefab using Guid(51789f9ebdb4f34469fce163c516871e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a16b520a5934a55b68f7fb9fd12d59e') in 0.016182 seconds 
+  Import took 0.020940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.232555 seconds.
+  path: Assets/2) Prefabs 1/Projectiles/ATTACK OF DOOM AND DESTRUCTION.prefab
+  artifactKey: Guid(725a212e05c7f434095a80d77560b7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Projectiles/ATTACK OF DOOM AND DESTRUCTION.prefab using Guid(725a212e05c7f434095a80d77560b7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dba3c61c495da26ce3f540297fe815') in 0.009082 seconds 
+  Import took 0.013587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/2) Prefabs 1/Projectiles/projectile_lobber.prefab
+  artifactKey: Guid(b207a1e3125b64141a7d6a03593ec821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Projectiles/projectile_lobber.prefab using Guid(b207a1e3125b64141a7d6a03593ec821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f61bb18b6377455297cb2a69717105') in 0.011725 seconds 
+  Import took 0.017554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/2) Prefabs 1/Projectiles/projectile_demon.prefab
+  artifactKey: Guid(0addcbbd54e31e241acd6d1a5025024c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2) Prefabs 1/Projectiles/projectile_demon.prefab using Guid(0addcbbd54e31e241acd6d1a5025024c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16362bcb3fe97c875376207c9906fba') in 0.011253 seconds 
+  Import took 0.016357 seconds .
 
 ========================================================================
 Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 3.15 ms, found 2 plugins.
+Registering precompiled user dll's ...
+Registered in 0.004545 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000024100BB9010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F3F1B270 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F8ABAD40 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000241011EB3D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000241011DC070 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000241069C58C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FD1FD010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000241011EB3D0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FD704020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FC31A020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FC89BE40 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000024100FC5CD0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F8A90020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000241011DC070 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F9FA8010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F949D1C0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F3F1B840 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F367D3F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F8532020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FA27E030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F9FA8010 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F367D3F0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FF352030 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F3F1C000 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000024101255DA0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F3F1CD90 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FD60F620 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FFC3DAD0 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242F8A90020 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000242FC8EDD40 doesn't match image C:\Users\porky\Documents\GitHub\Gauntlet\Gauntlet Clone\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.6 MB.
-System memory in use after: 76.8 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.208 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1208ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1034ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (507ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (410ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2928 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.2 MB.
+System memory in use after: 134.5 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3558.
-Total: 4.455200 ms (FindLiveObjects: 0.262600 ms CreateObjectMapping: 0.144100 ms MarkObjects: 4.031700 ms  DeleteObjects: 0.016300 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3569.
+Total: 3.378300 ms (FindLiveObjects: 0.266000 ms CreateObjectMapping: 0.136900 ms MarkObjects: 2.952200 ms  DeleteObjects: 0.022400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
