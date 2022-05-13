@@ -14,5 +14,10 @@ public class Food_PickUp : Adventurer
         {
             gameObject.SetActive(false);
         }
+        if (other.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+            FoodPick();
+        }
     }
 }
