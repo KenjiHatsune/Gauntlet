@@ -29,6 +29,6 @@ public class ThiefGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Thief, transform.position, transform.rotation);
+        Instantiate(Thief, transform.position, transform.rotation, transform);
     }
 }

@@ -129,6 +129,7 @@ public class Adventurer : MonoBehaviour
         //Setting up Rigidbody
         _RigBod = gameObject.AddComponent<Rigidbody>();
         _RigBod.constraints = RigidbodyConstraints.FreezeRotation;
+        _RigBod.mass = 25;
 
         StartCoroutine(FadeAway());
 
@@ -144,28 +145,56 @@ public class Adventurer : MonoBehaviour
         if (_characterClass == CharacterClass.ElvenOne)
         {
             ProjectileSpeed += BonusProjectileSpeed;
-            _moveSpeed /= BonusMoveSpeed;
+            _moveSpeed *= BonusMoveSpeed;
         }
     }
 
     private void FixedUpdate()
     {
         //Adjusting Player Speed
-        Vector3 temp = Vector3.Lerp(_moveVec, _RigBod.velocity, 0.35f);
-        _RigBod.velocity = temp;
+        Vector3 temp = transform.position + transform.forward * 0.05f;
+        //If the player will move be moving within the confines of the Camera.
+        if (temp.x <= CameraFollow.instance.RgtBound &&
+            temp.x >= CameraFollow.instance.LftBound &&
+            temp.z <= CameraFollow.instance.TopBound &&
+            temp.z >= CameraFollow.instance.BotBound)
+        {
+            temp = _moveVec;
+            temp = Vector3.Lerp(temp, _RigBod.velocity, 0.35f);
+        }
+        //Otherwise, the player can't move in that direction.
+        else
+        {
+            //Ensuring player is within Camera-x confines if enemy pushes them out.
+            if (temp.x > CameraFollow.instance.RgtBound)
+                temp.x = CameraFollow.instance.RgtBound;
+            else if (temp.x < CameraFollow.instance.LftBound)
+                temp.x = CameraFollow.instance.LftBound;
+
+            //Ensuring player is within Camera-z confines if enemy pushes them out.
+            if (temp.z > CameraFollow.instance.TopBound)
+                temp.z = CameraFollow.instance.TopBound;
+            else if (temp.z < CameraFollow.instance.BotBound)
+                temp.z = CameraFollow.instance.BotBound;
+
+            temp = Vector3.zero;
+        }
+        if (temp != null)
+            _RigBod.velocity = temp;
     }
 
-    public void TakeDamage(int damageTaken)
+    //This translates the player's inputs into motion.
+    public void Move(Vector2 input)
     {
-        if (vulnerable)
-        {
-            damageTaken -= Armor;
-            if (damageTaken > 0)
-                Health -= damageTaken;
+        _moveVec.x = input.x;
+        _moveVec.y = 0f;
+        _moveVec.z = input.y;
 
-            //Updating UI HP Readout
-            Agent.OrderUIUpdate();
-        }
+        //Looking in the direction the player's moving.
+        Vector3 tempLook = _moveVec + transform.position;
+        transform.LookAt(tempLook);
+
+        _moveVec *= _moveSpeed;
     }
 
     public void Attack()
@@ -203,18 +232,6 @@ public class Adventurer : MonoBehaviour
 
         //Updating UI HP Readout
         Agent.OrderUIUpdate();
-    }
-
-    protected bool UseKey()
-    {
-        if (_keys > 0)
-        {
-            _keys--;
-            return true;
-        }
-
-        else
-            return false;
     }
 
     protected void OnCollisionEnter(Collision collision)
@@ -287,18 +304,29 @@ public class Adventurer : MonoBehaviour
         }
     }
 
-    //This translates the player's inputs into motion.
-    public void Move(Vector2 input)
+    public void TakeDamage(int damageTaken)
     {
-        _moveVec.x = input.x;
-        _moveVec.y = 0f;
-        _moveVec.z = input.y;
+        if (vulnerable)
+        {
+            damageTaken -= Armor;
+            if (damageTaken > 0)
+                Health -= damageTaken;
 
-        //Looking in the direction the player's moving.
-        Vector3 tempLook = _moveVec + transform.position;
-        transform.LookAt(tempLook);
+            //Updating UI HP Readout
+            Agent.OrderUIUpdate();
+        }
+    }
 
-        _moveVec *= _moveSpeed;
+    protected bool UseKey()
+    {
+        if (_keys > 0)
+        {
+            _keys--;
+            return true;
+        }
+
+        else
+            return false;
     }
 
     /// Skills \\\
@@ -421,7 +449,13 @@ public class Adventurer : MonoBehaviour
     {
         if (SkillReady)
         {
+            GameObject projectile = Instantiate(AttackPrefab, transform.position, transform.rotation);
+            projectile.GetComponent<Rigidbody>().velocity = (transform.forward * ProjectileSpeed);
+            PlayerProjectile settings = projectile.GetComponent<PlayerProjectile>();
 
+            settings.Damage = 10;
+            settings.Lockon = true;
+            settings.LifeSpan = ProjectileLifeSpan;
 
             StartCoroutine("SkillCooldown");
         }

@@ -28,6 +28,6 @@ public class SorcererGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Sorcerer, transform.position, transform.rotation);
+        Instantiate(Sorcerer, transform.position, transform.rotation, transform);
     }
 }

@@ -23,6 +23,6 @@ public class GhostGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Ghost, transform.position, transform.rotation);
+        Instantiate(Ghost, transform.position, transform.rotation, transform);
     }
 }

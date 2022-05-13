@@ -38,6 +38,12 @@ public class PlayerInputHandler : MonoBehaviour
         _characterControlled = _charactersMade;
         _charactersMade++;
 
+        //Naming this object.
+        this.gameObject.name = "PlayerController_" + _characterControlled.ToString();
+    }
+
+    public void NewPlayer()
+    {
         //Moving Player to below the camera.
         _playerSpawn = Camera.main.transform.position;
         switch (_characterControlled)
@@ -61,12 +67,6 @@ public class PlayerInputHandler : MonoBehaviour
         }
         _playerSpawn.y = 0.6f;
 
-        //Naming this object.
-        this.gameObject.name = "PlayerController_" + _characterControlled.ToString();
-    }
-
-    public void NewPlayer()
-    {
         //making a New Player.
         _character = Instantiate(_playerCharacters[_characterControlled], _playerSpawn, transform.rotation);
 

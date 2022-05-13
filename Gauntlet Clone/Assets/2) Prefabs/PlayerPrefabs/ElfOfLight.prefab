@@ -127,20 +127,17 @@ MonoBehaviour:
   Agent: {fileID: 0}
   AttackPrefab: {fileID: 8905763872221861667, guid: e2cb3201617b1964fb828b04c094bad7, type: 3}
   AttackElement: 0
-  AttackDamage: 1
+  AttackDamage: 2
   ProjectileSpeed: 10
-  AttackDelay: 1
+  AttackDelay: 0.28
   ProjectileLifeSpan: 5
   AttackReady: 1
-  SkillDelay: 5
+  SkillDelay: 2
   SkillReady: 1
-  _wallLayer:
-    serializedVersion: 2
-    m_Bits: 192
   _characterClass: 3
   DamageDropOff: 0
   DamageDropOffAmount: 0
-  BonusArmor: 2
+  BonusArmor: 3
   GFPercentage: 0.5
-  BonusProjectileSpeed: 0
-  BonusMoveSpeed: 0
+  BonusProjectileSpeed: 5
+  BonusMoveSpeed: 1.25

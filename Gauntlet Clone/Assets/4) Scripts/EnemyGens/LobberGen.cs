@@ -21,7 +21,7 @@ public class LobberGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Lobber, spawn.transform.position, spawn.transform.rotation);
+        Instantiate(Lobber, spawn.transform.position, spawn.transform.rotation, transform);
     }
     private void OnTriggerEnter(Collider other)
     {

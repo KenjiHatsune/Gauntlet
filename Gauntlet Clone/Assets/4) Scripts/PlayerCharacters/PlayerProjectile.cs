@@ -17,14 +17,40 @@ public class PlayerProjectile : MonoBehaviour
 {
     public Element AttackElement = Element.Physical;
     public int Damage = 2;
+    [Tooltip("Does the damage drop off by the set amount through the attack?")]
     public bool DamageDropOff = false;
     public int DamageDropOffAmount = 1;
     private float _damageDropOffTime = 2.5f;
+    [Tooltip("Does this projectile lock onto a target and move towards it?")]
+    public bool Lockon = false;
+    public float speed;
+    public GameObject Target;
     [Tooltip("How long the projectile lives for.")]
     public float LifeSpan = 5f;
 
     private void Start()
     {
+        if (Lockon)
+        {
+            //Finding possible targets.
+            GameObject[] temp = GameObject.FindGameObjectsWithTag("Enemy");
+
+            //Calibrating distance checks.
+            float distance = Mathf.Infinity;
+            float curDistance = Mathf.Infinity;
+
+            //Comparing distance to target for each possible target and targeting closest one.
+            foreach (GameObject item in temp)
+            {
+                curDistance = Vector3.Distance(item.transform.position, transform.position);
+                if (curDistance < distance)
+                {
+                    distance = curDistance;
+                    Target = item;
+                }
+            }
+        }
+
         if (DamageDropOff)
         {
             _damageDropOffTime = LifeSpan / 2;
@@ -33,6 +59,17 @@ public class PlayerProjectile : MonoBehaviour
         }
 
         Destroy(this.gameObject, LifeSpan);
+    }
+
+    private void FixedUpdate()
+    {
+        if (Lockon)
+        {
+            speed = GetComponent<Rigidbody>().velocity.magnitude;
+            Vector3 direction = (Target.transform.position - transform.position).normalized;
+            direction *= speed;
+            GetComponent<Rigidbody>().velocity = direction;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

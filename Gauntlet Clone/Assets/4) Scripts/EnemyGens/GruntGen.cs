@@ -28,6 +28,6 @@ public class GruntGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Grunt,transform.position,transform.rotation);
+        Instantiate(Grunt,transform.position,transform.rotation, transform);
     }
 }

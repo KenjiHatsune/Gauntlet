@@ -29,6 +29,6 @@ public class DemonGen : MonoBehaviour
     }
     public void Spawn()
     {
-        Instantiate(Demon, transform.position, transform.rotation);
+        Instantiate(Demon, transform.position, transform.rotation, transform);
     }
 }

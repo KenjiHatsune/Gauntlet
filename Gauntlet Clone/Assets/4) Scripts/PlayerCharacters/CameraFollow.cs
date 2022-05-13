@@ -2,16 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollow : Singleton<CameraFollow>
 {
     private float[] _playerPos_x;
     private float[] _playerPos_z;
+    public float CameraHeight = 30f;
     private Vector3 _shadowPos;
     [SerializeField] private GameObject[] _stalkedTargets;
+    [SerializeField] private float _xRgtBound, _xLftBound, _zTopBound, _zBotBound;
+    public float RgtBound
+    {
+        get { return _xRgtBound; }
+        set { _xRgtBound = value; }
+    }
+    public float LftBound
+    {
+        get { return _xLftBound; }
+        set { _xLftBound = value; }
+    }
+    public float TopBound
+    {
+        get { return _zTopBound; }
+        set { _zTopBound = value; }
+    }
+    public float BotBound
+    {
+        get { return _zBotBound; }
+        set { _zBotBound = value; }
+    }
 
     private void Start()
     {
         RefreshPlayerList();
+
+        FindBoundaries();
 
         Application.targetFrameRate = 60;
     }
@@ -28,10 +52,20 @@ public class CameraFollow : MonoBehaviour
         FindCenter();
 
         //Calibrating Camera Position
-        _shadowPos.y += 30f;
+        _shadowPos.y += CameraHeight;
 
         //Adjusting Camera Position
         transform.position = Vector3.Lerp(transform.position, _shadowPos, 0.25f);
+
+        FindBoundaries();
+    }
+
+    private void FindBoundaries()
+    {
+        RgtBound = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, - Camera.main.transform.position.y)).x;
+        LftBound = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, -Camera.main.transform.position.y)).x;
+        TopBound = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, -Camera.main.transform.position.y)).z;
+        BotBound = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, -Camera.main.transform.position.y)).z;
     }
 
     private void FindCenter()
